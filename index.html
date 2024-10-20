@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="title" content="Reazilla Homes" />
+  <meta name="description" content="the leading in real estate" />
+  <title>Reazilla | the leading in real estate</title>
+
+  <!-- 
+        * BOXICON
+    -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- 
+        * Owl Carousel
+    -->
+  <link rel="stylesheet" href="./assets/css/owl.theme.default.css" />
+  <link rel="stylesheet" href="./assets/css/owl.carousel.css" />
+  <!-- 
+        * CUSTOM STYLE
+    -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="l-container">
+      <div class="navbar js-mobile-nav">
+        <div class="l-flex-col navbar__banner">
+          <p class="navbar__icon-inline l-flex-row u-align-center">
+            <i class="bx bx-map" aria-hidden="true"></i>
+            Rezilla, 18 Grattan St, Brooklyn
+          </p>
+          <div class="l-flex-row u-justify-between">
+            <p class="navbar__icon-inline l-flex-row u-align-center">
+              <i class="bx bx-phone" aria-hidden="true"></i>
+              +1 206-214-2298
+            </p>
+            <p class="navbar__icon-inline l-flex-row u-align-center">
+              <i class="bx bx-envelope" aria-hidden="true"></i>
+              support@rezilla.com
+            </p>
+          </div>
+        </div>
+        <!-- Small screen Navbar header  -->
+        <div class="navbar__mobile l-flex-row u-align-center u-justify-between">
+          <a href="#">
+            <img src="./assets/images/logo.png" alt="Reazilla Home" class="logo" width="100" height="100" />
+          </a>
+          <button class="btn navbar__menu l-flex-col u-align-center u-justify-center js-navbar-toggler">
+            <span class="navbar__menu-bar js-menu-icon"></span>
+            <span class="navbar__menu-bar js-menu-icon"></span>
+            <span class="navbar__menu-bar js-menu-icon"></span>
+          </button>
+        </div>
+        <!-- Main Navbar | Small screen Navbar menu  -->
+        <div class="navbar__drawer l-flex-col js-drawer">
+          <!-- Navbar lists  -->
+          <div class="navbar__main l-flex-col">
+            <nav>
+              <ul class="navbar__list l-flex-col">
+                <li><a class="navbar__link" href="#home">Home</a></li>
+                <li><a class="navbar__link" href="#about">About</a></li>
+                <li><a class="navbar__link" href="#listings">Listings</a></li>
+                <li><a class="navbar__link" href="#services">Services</a></li>
+                <li><a class="navbar__link" href="#blogs">Blogs</a></li>
+              </ul>
+            </nav>
+            <img src="./assets/images/logo.png" alt="Reazilla Home" class="logo navbar-logo" width="120" height="120" />
+            <div class="navbar__action l-flex-col">
+              <a href="#" class="btn navbar__link">
+                <i class="bx bx-user-circle bx-md navbar__icon-inline" aria-hidden="true"></i>
+                Login/Register
+              </a>
+              <button class="btn btn--lg btn--primary btn--pill btn--icon navbar__btn">
+                <img src="./assets/images/btn-house.png" alt="" width="20" height="20" />
+                Add Listing
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 
+        * Hero
+    -->
+    <section class="hero">
+      <div class="l-container">
+        <div class="l-inner hero__inner l-grid">
+          <div class="hero__content">
+            <p class="u-section-text">REAL ESTATE</p>
+            <h1 class="hero__headline u-headline-lg">Find a perfect home you love..!</h1>
+            <p class="hero__desc">Etiam eget elementum elit. Aenean dignissim dapibus vestibulum. Integer a dolor eu
+              sapien sodales
+              vulputate ac in purus.</p>
+            <div class="hero__carousel owl-theme owl-carousel" data-name="hero">
+              <div class="hero__item item">
+                <img width="300" height="300" src="./assets/images/hero-img.png" alt="Home with nice rooms"
+                  class="hero__img">
+              </div>
+              <div class="hero__item item">
+                <img width="300" height="300" src="./assets/images/hero-img.png" alt="Home with nice rooms"
+                  class="hero__img">
+              </div>
+              <div class="hero__item item">
+                <img width="300" height="300" src="./assets/images/hero-img.png" alt="Home with nice rooms"
+                  class="hero__img">
+              </div>
+            </div>
+          </div>
+          <form class="form l-flex-col">
+            <ul class="form__tabs-list l-flex-row ">
+              <li class="form__tabs-item">
+                <input id="sell" type="radio" name="tab" class="form__tabs-checkbox">
+                <label class="form__label" for="sell">For Sale</label>
+              </li>
+              <li class="form__tabs__item">
+                <input id="rent" type="radio" name="tab" class="form__tabs-checkbox">
+                <label class="form__label" for="rent">For Sale</label>
+              </li>
+            </ul>
+            <input type="text" class="form-control" placeholder="New York, San Francisco, etc">
+            <select name="property-type" id="">
+              <option> Select property type</option>
+              <option value="flat">Flat</option>
+              <option value="Story building"> Story building</option>
+            </select>
+            <select name="rooms" id="">
+              <option> Select rooms</option>
+              <option value="2">2 bedrooms</option>
+              <option value="3">3 bedrooms</option>
+            </select>
+            <button class="btn form__filter"><i class="bx bx-filter"></i>Advance Search</button>
+            <button type="submit" class="btn btn--lg btn--primary btn--pill btn--icon"><i
+                class="bx bx-search"></i>Search</button>
+          </form>
+          <div class="hero__footer l-flex-col">
+            <div class="hero__happy-customers l-flex-row u-align-center">
+              <div class="hero__avatar-group">
+                <img src="./assets/images/hero-avatar-1.png" alt="" class="hero__avartar" width="35" height="35">
+                <img src="./assets/images/hero-avatar-2.png" alt="" class="hero__avartar" width="35" height="35">
+                <img src="./assets/images/hero-avatar-3.png" alt="" class="hero__avartar" width="35" height="35">
+                <img src="./assets/images/hero-avatar-4.png" alt="" class="hero__avartar" width="35" height="35">
+                <img src="./assets/images/hero-avatar-5.png" alt="" class="hero__avartar" width="35" height="35">
+              </div>
+              <p>72k+ Happy <br>
+                Customers</p>
+            </div>
+            <div class="hero__listings-count l-flex-row u-align-center">
+              <img src="./assets/images/daily-list.png" alt="" width="60" height="60">
+              <p>200+ New <br>
+                Listings Everyday!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+        * Trusted Clients
+    -->
+    <section class="clients">
+      <div class="l-container">
+        <div class="l-inner">
+          <h2 class="u-headline-sm">Trusted by 100+ Companies across the globe! </h2>
+          <div class="l-grid clients__brand">
+            <img src="./assets/images/google.png" alt="Google" class="clients__img" width="100" height="100">
+            <img src="./assets/images/amazon.png" alt="Amazon" class="clients__img" width="100" height="100">
+            <img src="./assets/images/logitech.png" alt="Logitech" class="clients__img" width="100" height="100">
+            <img src="./assets/images/spotify.png" alt="Spotify" class="clients__img" width="100" height="100">
+            <img src="./assets/images/samsung.png" alt="Samsung" class="clients__img" width="100" height="100">
+            <img src="./assets/images/netflix.png" alt="Netflix" class="clients__img" width="100" height="100">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+        * About us
+    -->
+    <section class="about">
+      <div class="l-container">
+        <div class="l-inner about__inner l-grid">
+          <div class="about__content">
+            <p class="u-section-text">WHO ARE WE</p>
+            <h1 class="about__headline u-headline-md">Assisting individuals in locating the appropriate real estate.
+            </h1>
+            <p>Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus. Nulla convallis ipsum
+              molestie nibh malesuada, ac malesuada leo volutpat.</p>
+            <ul class="about__list l-flex-col">
+              <li class="about__item l-flex-row u-align-center">
+                <img src="./assets/images/smart-home.png" alt="" class="about__icon" width="40" height="40">
+                <div>
+                  <h3 class="about__title">Donec porttitor euismod</h3>
+                  <p>Nullam a lacinia ipsum, nec dignissim purus. Nulla</p>
+                </div>
+              </li>
+              <li class="about__item l-flex-row u-align-center">
+                <img src="./assets/images/user.png" alt="" class="about__icon" width="40" height="40">
+                <div>
+                  <h3 class="about__title">Donec porttitor euismod</h3>
+                  <p>Nullam a lacinia ipsum, nec dignissim purus. Nulla</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="about__gallery l-grid">
+            <img width="300" height="300" src="./assets/images/about-1.png" alt="Home with nice rooms"
+              class="about__img item">
+            <img width="300" height="300" src="./assets/images/blog-2.png" alt="Home with nice rooms"
+              class="about__img item">
+            <img width="300" height="300" src="./assets/images/about-3.png" alt="Home with nice rooms"
+              class="about__img item">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+        * Listed Properties
+    -->
+    <section class="properties">
+      <div class="l-container">
+        <div class="l-inner properties__inner">
+          <div class="properties__header l-flex-col">
+            <div class="properties__block">
+              <p class="u-section-text">CHECKOUT OUR NEW</p>
+              <h1 class="properties__headline u-headline-md">Latest Listed Properties
+              </h1>
+              <p>Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus.</p>
+            </div>
+            <ul class="properties__action l-flex-row">
+              <li>
+                <input type="radio" name="status" id="all" class="properties__input">
+                <label for="all" role="button" class="btn btn--sm btn--outline btn--pill">All</label>
+              </li>
+              <li>
+                <input type="radio" name="status" id="for-sale" class="properties__input">
+                <label for="for-sale" role="button" class="btn btn--sm btn--primary btn--pill">Sell</label>
+              </li>
+              <li>
+                <input type="radio" name="status" id="for-rent" class="properties__input">
+                <label for="for-rent" role="button" class="btn btn--sm btn--outline btn--pill">Rent</label>
+              </li>
+            </ul>
+          </div>
+          <!-- Large screen properties in slides  -->
+          <ul class="properties__list properties-carousel owl-carousel owl-theme" style="display: none;">
+            <li class="properties__item item">
+              <img src="./assets/images/list-1.png" alt="" class="properties__img" width="200" height="200">
+              <h3 class="properties__price">$ 5,970</h3>
+              <h3 class="properties__title">Tranquil Haven in the Woods</h3>
+              <p>103 Wright CourtBurien, WA 98168</p>
+              <div class="l-flex-row u-align-center">
+                <div class="l-flex-row u-align-center">
+                  <img src="./assets/images/bed-icon.png" class="properties__icon" alt="" width="20" height="20">4 Beds
+                </div>
+                <div class="l-flex-row u-align-center">
+                  <img src="./assets/images/bath.png" class="properties__icon" alt="" width="20" height="20">3 Bath
+                </div>
+              </div>
+            </li>
+            <li class="properties__item item">
+              <img src="./assets/images/list-2.png" alt="" class="properties__img" width="200" height="200">
+              <h3 class="properties__price">$ 1,970</h3>
+              <h3 class="properties__title">Serene Retreat by the Lake</h3>
+              <p>1964 Jehovah Drive, VA 22408</p>
+              <div class="l-flex-row u-align-center">
+                <div class="l-flex-row u-align-center">
+                  <img src="./assets/images/bed-icon.png" class="properties__icon" alt="" width="20" height="20">2 Beds
+                </div>
+                <div class="l-flex-row u-align-center">
+                  <img src="./assets/images/bath.png" class="properties__icon" alt="" width="20" height="20">2 Bath
+                </div>
+              </div>
+            </li>
+            <li class="properties__item item">
+              <img src="./assets/images/list-3.png" alt="" class="properties__img" width="200" height="200">
+              <h3 class="properties__price">$ 3,450</h3>
+              <h3 class="properties__title">Charming Cottage in the Meadow</h3>
+              <p>1508 Centennial Farm RoadHarlan, 51537</p>
+              <div class="l-flex-row u-align-center">
+                <div class="l-flex-row u-align-center">
+                  <img src="./assets/images/bed-icon.png" class="properties__icon" alt="" width="20" height="20">4 Beds
+                </div>
+                <div class="l-flex-row u-align-center">
+                  <img src="./assets/images/bath.png" class="properties__icon" alt="" width="20" height="20">4 Bath
+                </div>
+              </div>
+            </li>
+            <li class="properties__item item">
+              <img src="./assets/images/list-2.png" alt="" class="properties__img" width="200" height="200">
+              <h3 class="properties__price">$ 2,389</h3>
+              <h3 class="properties__title">Grand Estate on the Hilltop</h3>
+              <p>103 Wright CourtBurien, WA 98168</p>
+              <div class="l-flex-row u-align-center">
+                <div class="l-flex-row u-align-center">
+                  <img src="./assets/images/bed-icon.png" class="properties__icon" alt="" width="20" height="20">4 Beds
+                </div>
+                <div class="l-flex-row u-align-center">
+                  <img src="./assets/images/bath.png" class="properties__icon" alt="" width="20" height="20">3 Bath
+                </div>
+              </div>
+            </li>
+          </ul>
+          <!-- Small screen properties is listed  -->
+          <ul class="properties__list properties-list-mobile owl-theme">
+            <li class="properties__item">
+              <img src="./assets/images/list-1.png" alt="" class="properties__img" width="300" height="300">
+              <h3 class="properties__price">$ 5,970</h3>
+              <h3 class="properties__title">Tranquil Haven in the Woods</h3>
+              <p>103 Wright CourtBurien, WA 98168</p>
+              <div class="l-flex-row u-align-center">
+                <div class="l-flex-row u-align-center">
+                  <img src="./assets/images/bed-icon.png" class="properties__icon" alt="" width="20" height="20">4 Beds
+                </div>
+                <div class="l-flex-row u-align-center">
+                  <img src="./assets/images/bath.png" class="properties__icon" alt="" width="20" height="20">3 Bath
+                </div>
+              </div>
+            </li>
+            <li class="properties__item">
+              <img src="./assets/images/list-2.png" alt="" class="properties__img" width="300" height="300">
+              <h3 class="properties__price">$ 1,970</h3>
+              <h3 class="properties__title">Serene Retreat by the Lake</h3>
+              <p>1964 Jehovah Drive, VA 22408</p>
+              <div class="l-flex-row u-align-center">
+                <div class="l-flex-row u-align-center">
+                  <img src="./assets/images/bed-icon.png" class="properties__icon" alt="" width="20" height="20">2 Beds
+                </div>
+                <div class="l-flex-row u-align-center">
+                  <img src="./assets/images/bath.png" class="properties__icon" alt="" width="20" height="20">2 Bath
+                </div>
+              </div>
+            </li>
+            <li class="properties__item">
+              <img src="./assets/images/list-3.png" alt="" class="properties__img" width="300" height="300">
+              <h3 class="properties__price">$ 3,450</h3>
+              <h3 class="properties__title">Charming Cottage in the Meadow</h3>
+              <p>1508 Centennial Farm RoadHarlan, 51537</p>
+              <div class="l-flex-row u-align-center">
+                <div class="l-flex-row u-align-center">
+                  <img src="./assets/images/bed-icon.png" class="properties__icon" alt="" width="20" height="20">4 Beds
+                </div>
+                <div class="l-flex-row u-align-center">
+                  <img src="./assets/images/bath.png" class="properties__icon" alt="" width="20" height="20">4 Bath
+                </div>
+              </div>
+            </li>
+            <li class="properties__item">
+              <img src="./assets/images/list-2.png" alt="" class="properties__img" width="300" height="300">
+              <h3 class="properties__price">$ 2,389</h3>
+              <h3 class="properties__title">Grand Estate on the Hilltop</h3>
+              <p>103 Wright CourtBurien, WA 98168</p>
+              <div class="l-flex-row u-align-center">
+                <div class="l-flex-row u-align-center">
+                  <img src="./assets/images/bed-icon.png" class="properties__icon" alt="" width="20" height="20">4 Beds
+                </div>
+                <div class="l-flex-row u-align-center">
+                  <img src="./assets/images/bath.png" class="properties__icon" alt="" width="20" height="20">3 Bath
+                </div>
+              </div>
+            </li>
+          </ul>
+          <a href="#" class="btn btn--lg btn--outline btn--pill">View more properties</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+        * Our Service
+    -->
+    <section class="service">
+      <div class="l-container">
+        <div class="l-inner service__inner">
+          <p class="u-section-text">OUR SERVICES</p>
+          <h2 class="u-headline-md service__headline">Donec porttitor euismod dignissim</h2>
+          <ul class="service__list">
+            <li class="service__item l-flex-col">
+              <img src="./assets/images/search.png" alt="" class="service__img" width="80" height="80">
+              <h3 class="service__title">Buy a New Home</h3>
+              <p>Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus. </p>
+            </li>
+            <li class="service__item l-flex-col">
+              <img src="./assets/images/home.png" alt="" class="service__img" width="80" height="80">
+              <h3 class="service__title">Sell a House</h3>
+              <p>Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus. </p>
+            </li>
+            <li class="service__item l-flex-col">
+              <img src="./assets/images/bed.png" alt="" class="service__img" width="80" height="80">
+              <h3 class="service__title">Rent a House</h3>
+              <p>Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus. </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+        * Our Neighborhood
+    -->
+    <section class="neighborhood">
+      <div class="l-container">
+        <div class="l-inner neighborhood__inner">
+          <p class="u-section-text">AREAS ACROSS THE TOWN</p>
+          <h2 class="u-headline-md neighborhood__headline">Neighborhood Properties</h2>
+          <ul class="neighborhood__list l-grid">
+            <li class="neighborhood__item">
+              <figure>
+                <img src="./assets/images/property-1.png" alt="" class="neighborhood__img" width="300" height="300">
+                <figcaption class="neighborhood__title">
+                  <span>216</span>
+                  <span class="neighborhood__title--small">New York City, NY</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="neighborhood__item">
+              <figure>
+                <img src="./assets/images/property-2.png" alt="" class="neighborhood__img" width="300" height="300">
+                <figcaption class="neighborhood__title">
+                  <span>141</span>
+                  <span class="neighborhood__title--small">Houston, TX</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="neighborhood__item">
+              <figure>
+                <img src="./assets/images/property-3.png" alt="" class="neighborhood__img" width="300" height="300">
+                <figcaption class="neighborhood__title">
+                  <span>222</span>
+                  <span class="neighborhood__title--small">San Diego, CA</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="neighborhood__item">
+              <figure>
+                <img src="./assets/images/property-4.png" alt="" class="neighborhood__img" width="300" height="300">
+                <figcaption class="neighborhood__title">
+                  <span>183</span>
+                  <span class="neighborhood__title--small">Philadelphia, PA</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="neighborhood__item">
+              <figure>
+                <img src="./assets/images/property-5.png" alt="" class="neighborhood__img" width="300" height="300">
+                <figcaption class="neighborhood__title">
+                  <span>112</span>
+                  <span class="neighborhood__title--small">San Francisco, CA</span>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+        * Our Team
+    -->
+    <section class="team">
+      <div class="l-container">
+        <div class="l-inner team__inner">
+          <p class="u-section-text">Introduce yourself to </p>
+          <h2 class="u-headline-md team__headline">Our Team of Experts</h2>
+          <ul class="team__list l-grid">
+            <li class="team__item">
+              <img src="./assets/images/team-1.png" alt=">Brendon - CEO & founder of Rezilla" class="team__img"
+                width="120" height="120">
+              <h3 class="team__title">Brendon M</h3>
+              <p>CEO & Founder</p>
+            </li>
+            <li class="team__item">
+              <img src="./assets/images/team-2.png" alt="Jodi with blushing face" class="team__img" width="120"
+                height="120">
+              <h3 class="team__title">Jodi J. Appleby</h3>
+              <p>Real Estate Developer</p>
+            </li>
+            <li class="team__item">
+              <img src="./assets/images/team-3.png" alt="Justin with his wide smile" class="team__img" width="120"
+                height="120">
+              <h3 class="team__title">Justin S. Meza</h3>
+              <p>Listing Agent</p>
+            </li>
+            <li class="team__item">
+              <img src="./assets/images/team-4.png" alt="Susan with nice photoshoot" class="team__img" width="120"
+                height="120">
+              <h3 class="team__title">Susan T. Smith</h3>
+              <p>Buyer's Agent</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+        * Blog
+    -->
+    <section class="blog">
+      <div class="l-container">
+        <div class="l-inner blog__inner">
+          <p class="u-section-text">WHAT’S TRENDING</p>
+          <h2 class="u-headline-md blog__headline">Latest Blogs & Posts</h2>
+          <ul class="blog__list l-flex-col">
+            <li class="blog__item">
+              <figure class="blog__cover">
+                <img src="./assets/images/blog-1.png" alt=">Brendon - CEO & founder of Rezilla" class="blog__img"
+                  width="120" height="120">
+                <figcaption class="blog__tag">
+                  <h4 class="blog__date">28</h4>
+                  <p>Tue</p>
+                </figcaption>
+              </figure>
+              <h3 class="blog__title">Top 10 Home Buying Mistakes to Avoid</h3>
+              <p>Etiam eget elementum elit. Aenean dignissim dapibus vestibulum</p>
+              <button class="btn btn--sm btn--outline btn--pill">
+                <i class="bx bx-right-arrow-alt blog__btn" aria-hidden="true"></i>
+              </button>
+            </li>
+            <li class="blog__item">
+              <figure class="blog__cover">
+                <img src="./assets/images/blog-2.png" alt=">Brendon - CEO & founder of Rezilla" class="blog__img"
+                  width="120" height="120">
+                <figcaption class="blog__tag">
+                  <h4 class="blog__date">08</h4>
+                  <p>Mon</p>
+                </figcaption>
+              </figure>
+              <h3 class="blog__title">How to Stage Your Home for a Quick Sale</h3>
+              <p>Nullam odio lacus, dictum quis pretium congue, vehicula venenatis nunc.</p>
+              <button class="btn btn--sm btn--outline btn--pill">
+                <i class="bx bx-right-arrow-alt blog__btn" aria-hidden="true"></i>
+              </button>
+            </li>
+            <li class="blog__item">
+              <figure class="blog__cover">
+                <img src="./assets/images/blog-3.png" alt=">Brendon - CEO & founder of Rezilla" class="blog__img"
+                  width="120" height="120">
+                <figcaption class="blog__tag">
+                  <h4 class="blog__date">15</h4>
+                  <p>Wed</p>
+                </figcaption>
+              </figure>
+              <h3 class="blog__title">5 Tips for First-Time Home Sellers</h3>
+              <p>In hac habitasse platea dictumst. Phasellus vel velit vel augue maximus.</p>
+              <button class="btn btn--sm btn--outline btn--pill">
+                <i class="bx bx-right-arrow-alt blog__btn" aria-hidden="true"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+        * Testimonials
+    -->
+    <section class="testimonials">
+      <div class="l-container">
+        <div class="l-inner blog__inner l-grid">
+          <div>
+            <p class="u-section-text">TESTIMONIALS</p>
+            <h2 class="u-headline-md blog__headline">Fusce venenatis tellus a felis scelerisque, non pulvinar est
+              pellentesque.</h2>
+            <div class="l-flex-row">
+              <button class="btn btn--sm btn--outline btn--pill">
+                <i class="bx bx-left-arrow-alt blog__btn" aria-hidden="true"></i>
+              </button>
+              <button class="btn btn--sm btn--outline btn--pill">
+                <i class="bx bx-right-arrow-alt blog__btn" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <div class="testimonials__list owl-theme owl-carousel" style="display: none;">
+            <div class="testimonials__item item">
+              <img src="./assets/images/review-icon.png" alt="" width="20" height="20" class="testimonials__icon">
+              <p>I highly recommend Jodi J. Appleby. She was attentive to our needs and worked tirelessly to find us the
+                perfect home. We couldn't be happier with our new place!</p>
+              <hr>
+              <div class="l-flex-row testimonial__footer">
+                <img src="./assets/images/review-avatar.png" alt="" class="testimonial__img" width="40" height="40">
+                <p class="testimonial__name">Barbara D. Smith</p>
+                <div class="testimonial__rating l-flex-row u-align-center">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+        * Become Agent
+    -->
+    <section id="agent" class="agent">
+      <div class="l-container">
+        <div class="l-inner">
+          <div class="agent__wrapper l-flex-col">
+            <div>
+              <h2 class="u-headline-md agent__headline">Become a Agent.</h2>
+              <p>Fusce venenatis tellus a felis scelerisque. venenatis tellus a felis scelerisque. </p>
+            </div>
+            <button class="btn btn--lg btn--outline btn--pill agent__btn">Register Now</button>
+            <img src="./assets/images/agent.png" alt="Brendon - CEO and founder" class="agent__img">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="l-container">
+      <div class="l-inner l-grid">
+        <div class="footer__brand l-flex-col">
+          <img src="./assets/images/logo.png" alt="Rezilla Home" class="footer__logo logo">
+          <p class="footer__address">2728 Hickory StreetSalt
+            Lake City, UT 84104</p>
+          <a href="tel:+1 206-214-2298" class="navbar__icon-inline l-flex-row u-align-center">
+            <i class="bx bx-phone" aria-hidden="true"></i>
+            +1 206-214-2298
+          </a>
+          <a href="mailto: support@rezilla.com" class="navbar__icon-inline l-flex-row u-align-center">
+            <i class="bx bx-envelope" aria-hidden="true"></i>
+            support@rezilla.com
+          </a>
+        </div>
+        <nav class="footer__navbar">
+          <h2 class="footer__title">Quick Links</h2>
+          <ul class="footer__list l-flex-col">
+            <li class="footer__item">
+              <a href="#home" class="footer__link">Home</a>
+            </li>
+            <li class="footer__item">
+              <a href="#about" class="footer__link">About</a>
+            </li>
+            <li class="footer__item">
+              <a href="#listing" class="footer__link">Listings</a>
+            </li>
+            <li class="footer__item">
+              <a href="#services" class="footer__link">Services</a>
+            </li>
+            <li class="footer__item">
+              <a href="#blog" class="footer__link">Blog</a>
+            </li>
+            <li class="footer__item">
+              <a href="#agent" class="footer__link">Become Agent</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer__navbar">
+          <h2 class="footer__title">Discovery</h2>
+          <ul class="footer__list l-flex-col">
+            <li class="footer__item">
+              <a href="#home" class="footer__link">Ghana</a>
+            </li>
+            <li class="footer__item">
+              <a href="#about" class="footer__link">Nigeria</a>
+            </li>
+            <li class="footer__item">
+              <a href="#listing" class="footer__link">Russia</a>
+            </li>
+            <li class="footer__item">
+              <a href="#services" class="footer__link">China</a>
+            </li>
+            <li class="footer__item">
+              <a href="#blog" class="footer__link">Iran</a>
+            </li>
+            <li class="footer__item">
+              <a href="#agent" class="footer__link">North Korea</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="l-flex-col footer__newsletter">
+          <h2 class="footer__headline">Subscribe to our Newsletter!</h2>
+          <form action="#" class="footer__form">
+            <div class="footer__form-group">
+              <input type="emal" class="footer__input" placeholder="Email Address">
+              <button class="btn btn--sm btn--primary btn--pill footer__btn"><i
+                  class="bx bx-right-arrow-alt"></i></button>
+            </div>
+          </form>
+          <h3 class="footer__title">Follow Us on</h3>
+          <div class="footer__social l-flex-row u-align-center">
+            <a href="#" class="btn btn--sm btn--pill footer__btn">
+              <img src="./assets/images/linkedin.png" alt="" class="footer__icon">
+            </a>
+            <a href="#" class="btn btn--sm btn--pill footer__btn">
+              <img src="./assets/images/facebook.png" alt="" class="footer__icon">
+            </a>
+            <a href="#" class="btn btn--sm btn--pill footer__btn">
+              <img src="./assets/images/instagram.png" alt="" class="footer__icon">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__terms">
+      <div class="l-container l-flex-col">
+        <p>© Rezilla – All rights reserved</p>
+        <ul class="footer__terms-list l-flex-row">
+          <li>Terms and Conditions</li>
+          <li>Privacy Policy</li>
+          <li>Disclaimer</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 
+     * Jquery
+  -->
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+
+  <!-- 
+   * Owl Carousel
+  -->
+  <script src="assets/js/owl.carousel.js"></script>
+
+  <!-- 
+     * Custom JS
+  -->
+  <script src="assets/js/main.js"></script>
+  <script>
+
+  </script>
+</body>
+
+</html>
