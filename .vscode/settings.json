@@ -22,4 +22,9 @@
     "css.format.spaceAroundSelectorSeparator": false,
     "editor.letterSpacing": 0.05,
     "terminal.integrated.letterSpacing": 0,
+    "json.schemas": [
+
+    ],
+      
+   
 }

@@ -40,11 +40,11 @@ $(document).ready(function () {
         autoplaySpeed: 1800,
         smartSpeed: 800,
         nav: true,
+        dots: true,
         navText: [
           '<i class="bx bx-chevron-left bx-lg hero__icon" aria-hidden="true"></i>',
           '<i class="bx bx-chevron-right bx-lg hero__icon" aria-hidden="true"></i>',
         ],
-        dots: true,
       },
     };
 

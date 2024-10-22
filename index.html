@@ -7,12 +7,10 @@
   <meta name="title" content="Reazilla Homes" />
   <meta name="description" content="the leading in real estate" />
   <title>Reazilla | the leading in real estate</title>
-
   <!-- 
         * BOXICON
     -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-
   <!-- 
         * Owl Carousel
     -->
@@ -55,9 +53,8 @@
             <span class="navbar__menu-bar js-menu-icon"></span>
           </button>
         </div>
-        <!-- Main Navbar | Small screen Navbar menu  -->
+        <!-- Main Navbar -->
         <div class="navbar__drawer l-flex-col js-drawer">
-          <!-- Navbar lists  -->
           <div class="navbar__main l-flex-col">
             <nav>
               <ul class="navbar__list l-flex-col">
@@ -84,9 +81,7 @@
       </div>
     </div>
   </header>
-
   <main>
-
     <!-- 
         * Hero
     -->
@@ -114,10 +109,10 @@
               </div>
             </div>
           </div>
-          <form class="form l-flex-col">
-            <ul class="form__tabs-list l-flex-row ">
-              <li class="form__tabs-item">
-                <input id="sell" type="radio" name="tab" class="form__tabs-checkbox">
+          <form class="form">
+            <ul class="form__tabs-list l-flex-row u-justify-center">
+              <li class="form__tabs_item">
+                <input id="sell" type="radio" name="tab" class="form__tabs-checkbox" checked>
                 <label class="form__label" for="sell">For Sale</label>
               </li>
               <li class="form__tabs__item">
@@ -125,37 +120,38 @@
                 <label class="form__label" for="rent">For Sale</label>
               </li>
             </ul>
-            <input type="text" class="form-control" placeholder="New York, San Francisco, etc">
-            <select name="property-type" id="">
-              <option> Select property type</option>
-              <option value="flat">Flat</option>
-              <option value="Story building"> Story building</option>
-            </select>
-            <select name="rooms" id="">
-              <option> Select rooms</option>
-              <option value="2">2 bedrooms</option>
-              <option value="3">3 bedrooms</option>
-            </select>
-            <button class="btn form__filter"><i class="bx bx-filter"></i>Advance Search</button>
-            <button type="submit" class="btn btn--lg btn--primary btn--pill btn--icon"><i
-                class="bx bx-search"></i>Search</button>
+            <div class="form__input-group  l-flex-col">
+              <input type="text" class="form__control" placeholder="New York, San Francisco, etc">
+              <select name="property-type" class="form__control form-select">
+                <option selected="selected" disabled hidden> Select property type</option>
+                <option value="flat">Flat</option>
+                <option value="Story building"> Story building</option>
+              </select>
+              <select name="rooms" class="form__control form-select">
+                <option selected="selected" disabled hidden> Select rooms</option>
+                <option value="2">2 bedrooms</option>
+                <option value="3">3 bedrooms</option>
+              </select>
+              <button class="btn form__filter"><i class="bx bx-slider bx-sm form__icon"></i>Advance Search</button>
+              <button type="submit" class="btn btn--lg btn--primary btn--pill btn--icon form__btn"><i
+                  class="bx bx-search bx-md"></i>Search</button>
+            </div>
           </form>
-          <div class="hero__footer l-flex-col">
-            <div class="hero__happy-customers l-flex-row u-align-center">
+          <div class="hero__stats l-flex-col u-align-center">
+            <div class="hero__stats-col l-flex-row u-align-center">
               <div class="hero__avatar-group">
-                <img src="./assets/images/hero-avatar-1.png" alt="" class="hero__avartar" width="35" height="35">
-                <img src="./assets/images/hero-avatar-2.png" alt="" class="hero__avartar" width="35" height="35">
-                <img src="./assets/images/hero-avatar-3.png" alt="" class="hero__avartar" width="35" height="35">
-                <img src="./assets/images/hero-avatar-4.png" alt="" class="hero__avartar" width="35" height="35">
-                <img src="./assets/images/hero-avatar-5.png" alt="" class="hero__avartar" width="35" height="35">
+                <img src="./assets/images/hero-avatar-1.png" alt="" class="hero__avatar" width="35" height="35">
+                <img src="./assets/images/hero-avatar-2.png" alt="" class="hero__avatar" width="35" height="35">
+                <img src="./assets/images/hero-avatar-3.png" alt="" class="hero__avatar" width="35" height="35">
+                <img src="./assets/images/hero-avatar-4.png" alt="" class="hero__avatar" width="35" height="35">
+                <img src="./assets/images/hero-avatar-5.png" alt="" class="hero__avatar" width="35" height="35">
               </div>
-              <p>72k+ Happy <br>
+              <p class="hero__stats-text">72k+ Happy <br>
                 Customers</p>
             </div>
-            <div class="hero__listings-count l-flex-row u-align-center">
+            <div class="hero__stats-col hero-listings l-flex-row u-align-center">
               <img src="./assets/images/daily-list.png" alt="" width="60" height="60">
-              <p>200+ New <br>
-                Listings Everyday!</p>
+              <p class="hero__stats-text">200+ New <br> Listings Everyday!</p>
             </div>
           </div>
         </div>
@@ -163,13 +159,13 @@
     </section>
 
     <!-- 
-        * Trusted Clients
+        * Trusted Companies | Clients
     -->
     <section class="clients">
       <div class="l-container">
         <div class="l-inner">
-          <h2 class="u-headline-sm">Trusted by 100+ Companies across the globe! </h2>
-          <div class="l-grid clients__brand">
+          <h2 class="u-headline-sm client__headline">Trusted by 100+ Companies across the globe! </h2>
+          <div class="l-flex-row clients__brand u-align-center">
             <img src="./assets/images/google.png" alt="Google" class="clients__img" width="100" height="100">
             <img src="./assets/images/amazon.png" alt="Amazon" class="clients__img" width="100" height="100">
             <img src="./assets/images/logitech.png" alt="Logitech" class="clients__img" width="100" height="100">
@@ -193,31 +189,31 @@
             </h1>
             <p>Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus. Nulla convallis ipsum
               molestie nibh malesuada, ac malesuada leo volutpat.</p>
-            <ul class="about__list l-flex-col">
-              <li class="about__item l-flex-row u-align-center">
-                <img src="./assets/images/smart-home.png" alt="" class="about__icon" width="40" height="40">
-                <div>
-                  <h3 class="about__title">Donec porttitor euismod</h3>
-                  <p>Nullam a lacinia ipsum, nec dignissim purus. Nulla</p>
-                </div>
-              </li>
-              <li class="about__item l-flex-row u-align-center">
-                <img src="./assets/images/user.png" alt="" class="about__icon" width="40" height="40">
-                <div>
-                  <h3 class="about__title">Donec porttitor euismod</h3>
-                  <p>Nullam a lacinia ipsum, nec dignissim purus. Nulla</p>
-                </div>
-              </li>
-            </ul>
           </div>
           <div class="about__gallery l-grid">
             <img width="300" height="300" src="./assets/images/about-1.png" alt="Home with nice rooms"
-              class="about__img item">
-            <img width="300" height="300" src="./assets/images/blog-2.png" alt="Home with nice rooms"
-              class="about__img item">
+              class="about__img about-img-pool">
+            <img width="300" height="300" src="./assets/images/about-2.png" alt="Home with nice rooms"
+              class="about__img about-img-bed">
             <img width="300" height="300" src="./assets/images/about-3.png" alt="Home with nice rooms"
-              class="about__img item">
+              class="about__img about-img-couch">
           </div>
+          <ul class="about__list l-flex-col">
+            <li class="about__item l-flex-row u-align-center">
+              <img src="./assets/images/smart-home.png" alt="" class="about__icon" width="35" height="35">
+              <div>
+                <h3 class="about__title">Donec porttitor euismod</h3>
+                <p>Nullam a lacinia ipsum, nec dignissim purus. Nulla</p>
+              </div>
+            </li>
+            <li class="about__item l-flex-row u-align-center">
+              <img src="./assets/images/user.png" alt="" class="about__icon" width="35" height="35">
+              <div>
+                <h3 class="about__title">Donec porttitor euismod</h3>
+                <p>Nullam a lacinia ipsum, nec dignissim purus. Nulla</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -227,32 +223,32 @@
     -->
     <section class="properties">
       <div class="l-container">
-        <div class="l-inner properties__inner">
+        <div class="l-inner properties__inner l-flex-col">
           <div class="properties__header l-flex-col">
-            <div class="properties__block">
+            <div class="properties__col">
               <p class="u-section-text">CHECKOUT OUR NEW</p>
               <h1 class="properties__headline u-headline-md">Latest Listed Properties
               </h1>
               <p>Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus.</p>
             </div>
-            <ul class="properties__action l-flex-row">
+            <ul class="properties__col properties-selector l-flex-row u-align-center">
               <li>
                 <input type="radio" name="status" id="all" class="properties__input">
-                <label for="all" role="button" class="btn btn--sm btn--outline btn--pill">All</label>
+                <label for="all" role="button" class="btn btn--lg btn--outline btn--pill">All</label>
               </li>
               <li>
-                <input type="radio" name="status" id="for-sale" class="properties__input">
-                <label for="for-sale" role="button" class="btn btn--sm btn--primary btn--pill">Sell</label>
+                <input type="radio" name="status" id="for-sale" class="properties__input" checked>
+                <label for="for-sale" role="button" class="btn btn--lg btn--outline btn--pill">Sell</label>
               </li>
               <li>
                 <input type="radio" name="status" id="for-rent" class="properties__input">
-                <label for="for-rent" role="button" class="btn btn--sm btn--outline btn--pill">Rent</label>
+                <label for="for-rent" role="button" class="btn btn--lg btn--outline btn--pill">Rent</label>
               </li>
             </ul>
           </div>
           <!-- Large screen properties in slides  -->
-          <ul class="properties__list properties-carousel owl-carousel owl-theme" style="display: none;">
-            <li class="properties__item item">
+          <div class="properties-carousel owl-carousel owl-theme" style="display: none;">
+            <div class="properties__item item l-flex-col">
               <img src="./assets/images/list-1.png" alt="" class="properties__img" width="200" height="200">
               <h3 class="properties__price">$ 5,970</h3>
               <h3 class="properties__title">Tranquil Haven in the Woods</h3>
@@ -265,8 +261,8 @@
                   <img src="./assets/images/bath.png" class="properties__icon" alt="" width="20" height="20">3 Bath
                 </div>
               </div>
-            </li>
-            <li class="properties__item item">
+            </div>
+            <div class="properties__item item l-flex-col">
               <img src="./assets/images/list-2.png" alt="" class="properties__img" width="200" height="200">
               <h3 class="properties__price">$ 1,970</h3>
               <h3 class="properties__title">Serene Retreat by the Lake</h3>
@@ -279,8 +275,8 @@
                   <img src="./assets/images/bath.png" class="properties__icon" alt="" width="20" height="20">2 Bath
                 </div>
               </div>
-            </li>
-            <li class="properties__item item">
+            </div>
+            <div class="properties__item item l-flex-col">
               <img src="./assets/images/list-3.png" alt="" class="properties__img" width="200" height="200">
               <h3 class="properties__price">$ 3,450</h3>
               <h3 class="properties__title">Charming Cottage in the Meadow</h3>
@@ -293,8 +289,8 @@
                   <img src="./assets/images/bath.png" class="properties__icon" alt="" width="20" height="20">4 Bath
                 </div>
               </div>
-            </li>
-            <li class="properties__item item">
+            </div>
+            <div class="properties__item item l-flex-col">
               <img src="./assets/images/list-2.png" alt="" class="properties__img" width="200" height="200">
               <h3 class="properties__price">$ 2,389</h3>
               <h3 class="properties__title">Grand Estate on the Hilltop</h3>
@@ -307,68 +303,80 @@
                   <img src="./assets/images/bath.png" class="properties__icon" alt="" width="20" height="20">3 Bath
                 </div>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
           <!-- Small screen properties is listed  -->
-          <ul class="properties__list properties-list-mobile owl-theme">
-            <li class="properties__item">
-              <img src="./assets/images/list-1.png" alt="" class="properties__img" width="300" height="300">
-              <h3 class="properties__price">$ 5,970</h3>
-              <h3 class="properties__title">Tranquil Haven in the Woods</h3>
-              <p>103 Wright CourtBurien, WA 98168</p>
-              <div class="l-flex-row u-align-center">
-                <div class="l-flex-row u-align-center">
-                  <img src="./assets/images/bed-icon.png" class="properties__icon" alt="" width="20" height="20">4 Beds
+          <ul class="properties__list properties-list l-flex-col">
+            <li>
+              <a href="#" class="properties__item l-flex-col">
+                <img src="./assets/images/list-1.png" alt="" class="properties__img" width="300" height="300">
+                <h3 class="properties__price">$ 5,970</h3>
+                <h3 class="properties__title">Tranquil Haven in the Woods</h3>
+                <p>103 Wright CourtBurien, WA 98168</p>
+                <div class="l-flex-row u-align-center properties__features">
+                  <div class="l-flex-row u-align-center">
+                    <img src="./assets/images/bed-icon.png" class="properties__icon" alt="" width="24" height="24">4
+                    Beds
+                  </div>
+                  <div class="l-flex-row u-align-center">
+                    <img src="./assets/images/bath.png" class="properties__icon" alt="" width="20" height="20">3 Bath
+                  </div>
                 </div>
-                <div class="l-flex-row u-align-center">
-                  <img src="./assets/images/bath.png" class="properties__icon" alt="" width="20" height="20">3 Bath
-                </div>
-              </div>
+              </a>
             </li>
-            <li class="properties__item">
-              <img src="./assets/images/list-2.png" alt="" class="properties__img" width="300" height="300">
-              <h3 class="properties__price">$ 1,970</h3>
-              <h3 class="properties__title">Serene Retreat by the Lake</h3>
-              <p>1964 Jehovah Drive, VA 22408</p>
-              <div class="l-flex-row u-align-center">
-                <div class="l-flex-row u-align-center">
-                  <img src="./assets/images/bed-icon.png" class="properties__icon" alt="" width="20" height="20">2 Beds
+            <li class="properties__item l-flex-col">
+              <a href="#" class="properties__item l-flex-col">
+                <img src="./assets/images/list-2.png" alt="" class="properties__img" width="300" height="300">
+                <h3 class="properties__price">$ 1,970</h3>
+                <h3 class="properties__title">Serene Retreat by the Lake</h3>
+                <p>1964 Jehovah Drive, VA 22408</p>
+                <div class="l-flex-row u-align-center properties__features">
+                  <div class="l-flex-row u-align-center">
+                    <img src="./assets/images/bed-icon.png" class="properties__icon" alt="" width="24" height="24">2
+                    Beds
+                  </div>
+                  <div class="l-flex-row u-align-center">
+                    <img src="./assets/images/bath.png" class="properties__icon" alt="" width="20" height="20">2 Bath
+                  </div>
                 </div>
-                <div class="l-flex-row u-align-center">
-                  <img src="./assets/images/bath.png" class="properties__icon" alt="" width="20" height="20">2 Bath
-                </div>
-              </div>
+              </a>
             </li>
-            <li class="properties__item">
-              <img src="./assets/images/list-3.png" alt="" class="properties__img" width="300" height="300">
-              <h3 class="properties__price">$ 3,450</h3>
-              <h3 class="properties__title">Charming Cottage in the Meadow</h3>
-              <p>1508 Centennial Farm RoadHarlan, 51537</p>
-              <div class="l-flex-row u-align-center">
-                <div class="l-flex-row u-align-center">
-                  <img src="./assets/images/bed-icon.png" class="properties__icon" alt="" width="20" height="20">4 Beds
+            <li>
+              <a href="#" class="properties__item l-flex-col">
+                <img src="./assets/images/list-3.png" alt="" class="properties__img" width="300" height="300">
+                <h3 class="properties__price">$ 3,450</h3>
+                <h3 class="properties__title">Charming Cottage in the Meadow</h3>
+                <p>1508 Centennial Farm RoadHarlan, 51537</p>
+                <div class="l-flex-row u-align-center properties__features">
+                  <div class="l-flex-row u-align-center">
+                    <img src="./assets/images/bed-icon.png" class="properties__icon" alt="" width="24" height="24">4
+                    Beds
+                  </div>
+                  <div class="l-flex-row u-align-center">
+                    <img src="./assets/images/bath.png" class="properties__icon" alt="" width="20" height="20">4 Bath
+                  </div>
                 </div>
-                <div class="l-flex-row u-align-center">
-                  <img src="./assets/images/bath.png" class="properties__icon" alt="" width="20" height="20">4 Bath
-                </div>
-              </div>
+              </a>
             </li>
-            <li class="properties__item">
-              <img src="./assets/images/list-2.png" alt="" class="properties__img" width="300" height="300">
-              <h3 class="properties__price">$ 2,389</h3>
-              <h3 class="properties__title">Grand Estate on the Hilltop</h3>
-              <p>103 Wright CourtBurien, WA 98168</p>
-              <div class="l-flex-row u-align-center">
-                <div class="l-flex-row u-align-center">
-                  <img src="./assets/images/bed-icon.png" class="properties__icon" alt="" width="20" height="20">4 Beds
+            <li>
+              <a href="#" class="properties__item l-flex-col">
+                <img src="./assets/images/list-2.png" alt="" class="properties__img" width="300" height="300">
+                <h3 class="properties__price">$ 2,389</h3>
+                <h3 class="properties__title">Grand Estate on the Hilltop</h3>
+                <p>103 Wright CourtBurien, WA 98168</p>
+                <div class="l-flex-row u-align-center properties__features">
+                  <div class="l-flex-row u-align-center">
+                    <img src="./assets/images/bed-icon.png" class="properties__icon" alt="" width="24" height="24">4
+                    Beds
+                  </div>
+                  <div class="l-flex-row u-align-center">
+                    <img src="./assets/images/bath.png" class="properties__icon" alt="" width="20" height="20">3 Bath
+                  </div>
                 </div>
-                <div class="l-flex-row u-align-center">
-                  <img src="./assets/images/bath.png" class="properties__icon" alt="" width="20" height="20">3 Bath
-                </div>
-              </div>
+              </a>
             </li>
           </ul>
-          <a href="#" class="btn btn--lg btn--outline btn--pill">View more properties</a>
+          <a href="#" class="btn btn--lg btn--outline btn--pill properties__btn">View more properties</a>
         </div>
       </div>
     </section>
