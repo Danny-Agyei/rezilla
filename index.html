@@ -117,7 +117,7 @@
               </li>
               <li class="form__tabs__item">
                 <input id="rent" type="radio" name="tab" class="form__tabs-checkbox">
-                <label class="form__label" for="rent">For Sale</label>
+                <label class="form__label" for="rent">For Rent</label>
               </li>
             </ul>
             <div class="form__input-group  l-flex-col">
@@ -163,8 +163,8 @@
     -->
     <section class="clients">
       <div class="l-container">
-        <div class="l-inner">
-          <h2 class="u-headline-sm client__headline">Trusted by 100+ Companies across the globe! </h2>
+        <div class="l-inner clients__inner">
+          <h2 class="u-headline-sm clients__headline">Trusted by 100+ Companies across the globe! </h2>
           <div class="l-flex-row clients__brand u-align-center">
             <img src="./assets/images/google.png" alt="Google" class="clients__img" width="100" height="100">
             <img src="./assets/images/amazon.png" alt="Amazon" class="clients__img" width="100" height="100">
@@ -306,7 +306,7 @@
             </div>
           </div>
           <!-- Small screen properties is listed  -->
-          <ul class="properties__list properties-list l-flex-col">
+          <ul class="properties__list l-flex-col">
             <li>
               <a href="#" class="properties__item l-flex-col">
                 <img src="./assets/images/list-1.png" alt="" class="properties__img" width="300" height="300">
@@ -384,25 +384,25 @@
     <!-- 
         * Our Service
     -->
-    <section class="service">
+    <section class="services">
       <div class="l-container">
-        <div class="l-inner service__inner">
+        <div class="l-inner services__inner">
           <p class="u-section-text">OUR SERVICES</p>
-          <h2 class="u-headline-md service__headline">Donec porttitor euismod dignissim</h2>
-          <ul class="service__list">
-            <li class="service__item l-flex-col">
-              <img src="./assets/images/search.png" alt="" class="service__img" width="80" height="80">
-              <h3 class="service__title">Buy a New Home</h3>
+          <h2 class="u-headline-md services__headline">Donec porttitor euismod dignissim</h2>
+          <ul class="services__list l-flex-col">
+            <li class="services__item l-flex-col u-pull-center">
+              <img src="./assets/images/search.png" alt="" class="services__img" width="80" height="80">
+              <h3 class="services__title">Buy a New Home</h3>
               <p>Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus. </p>
             </li>
-            <li class="service__item l-flex-col">
-              <img src="./assets/images/home.png" alt="" class="service__img" width="80" height="80">
-              <h3 class="service__title">Sell a House</h3>
+            <li class="services__item l-flex-col u-pull-center">
+              <img src="./assets/images/home.png" alt="" class="services__img" width="80" height="80">
+              <h3 class="services__title">Sell a House</h3>
               <p>Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus. </p>
             </li>
-            <li class="service__item l-flex-col">
-              <img src="./assets/images/bed.png" alt="" class="service__img" width="80" height="80">
-              <h3 class="service__title">Rent a House</h3>
+            <li class="services__item l-flex-col u-pull-center">
+              <img src="./assets/images/bed.png" alt="" class="services__img" width="80" height="80">
+              <h3 class="services__title">Rent a House</h3>
               <p>Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus. </p>
             </li>
           </ul>
@@ -420,16 +420,17 @@
           <h2 class="u-headline-md neighborhood__headline">Neighborhood Properties</h2>
           <ul class="neighborhood__list l-grid">
             <li class="neighborhood__item">
-              <figure>
+              <figure class="neighborhood__cover l-flex-col">
                 <img src="./assets/images/property-1.png" alt="" class="neighborhood__img" width="300" height="300">
                 <figcaption class="neighborhood__title">
-                  <span>216</span>
-                  <span class="neighborhood__title--small">New York City, NY</span>
+                  <p>216
+                    <span class="neighborhood__title--small">New York City, NY</span>
+                  </p>
                 </figcaption>
               </figure>
             </li>
             <li class="neighborhood__item">
-              <figure>
+              <figure class="neighborhood__cover l-flex-col">
                 <img src="./assets/images/property-2.png" alt="" class="neighborhood__img" width="300" height="300">
                 <figcaption class="neighborhood__title">
                   <span>141</span>
@@ -438,7 +439,7 @@
               </figure>
             </li>
             <li class="neighborhood__item">
-              <figure>
+              <figure class="neighborhood__cover l-flex-col">
                 <img src="./assets/images/property-3.png" alt="" class="neighborhood__img" width="300" height="300">
                 <figcaption class="neighborhood__title">
                   <span>222</span>
@@ -447,7 +448,7 @@
               </figure>
             </li>
             <li class="neighborhood__item">
-              <figure>
+              <figure class="neighborhood__cover l-flex-col">
                 <img src="./assets/images/property-4.png" alt="" class="neighborhood__img" width="300" height="300">
                 <figcaption class="neighborhood__title">
                   <span>183</span>
@@ -456,7 +457,7 @@
               </figure>
             </li>
             <li class="neighborhood__item">
-              <figure>
+              <figure class="neighborhood__cover l-flex-col">
                 <img src="./assets/images/property-5.png" alt="" class="neighborhood__img" width="300" height="300">
                 <figcaption class="neighborhood__title">
                   <span>112</span>
@@ -475,7 +476,7 @@
     <section class="team">
       <div class="l-container">
         <div class="l-inner team__inner">
-          <p class="u-section-text">Introduce yourself to </p>
+          <p class="u-section-text">INTRODUCE YOURSELF TO</p>
           <h2 class="u-headline-md team__headline">Our Team of Experts</h2>
           <ul class="team__list l-grid">
             <li class="team__item">
@@ -513,55 +514,63 @@
     <section class="blog">
       <div class="l-container">
         <div class="l-inner blog__inner">
-          <p class="u-section-text">WHAT’S TRENDING</p>
+          <p class="u-section-text blog__section-text">WHAT’S TRENDING</p>
           <h2 class="u-headline-md blog__headline">Latest Blogs & Posts</h2>
           <ul class="blog__list l-flex-col">
-            <li class="blog__item">
-              <figure class="blog__cover">
-                <img src="./assets/images/blog-1.png" alt=">Brendon - CEO & founder of Rezilla" class="blog__img"
-                  width="120" height="120">
-                <figcaption class="blog__tag">
-                  <h4 class="blog__date">28</h4>
-                  <p>Tue</p>
-                </figcaption>
-              </figure>
-              <h3 class="blog__title">Top 10 Home Buying Mistakes to Avoid</h3>
-              <p>Etiam eget elementum elit. Aenean dignissim dapibus vestibulum</p>
-              <button class="btn btn--sm btn--outline btn--pill">
-                <i class="bx bx-right-arrow-alt blog__btn" aria-hidden="true"></i>
-              </button>
+            <li>
+              <a href="#" class="blog__item l-flex-col">
+                <figure class="blog__cover">
+                  <img src="./assets/images/blog-1.png" alt=">Brendon - CEO & founder of Rezilla" class="blog__img"
+                    width="120" height="120">
+                  <figcaption class="blog__tag">
+                    <h4 class="blog__date">28</h4>
+                    <p>Tue</p>
+                  </figcaption>
+                </figure>
+                <h3 class="blog__title">Top 10 Home Buying Mistakes to Avoid</h3>
+                <p>Etiam eget elementum elit. Aenean dignissim dapibus vestibulum</p>
+                <a href="#" class="btn btn--sm btn--pill btn--outline blog__btn">
+                  <i class="bx bx-right-arrow-alt bx-md" aria-hidden="true"></i>
+                </a>
+              </a>
             </li>
-            <li class="blog__item">
-              <figure class="blog__cover">
-                <img src="./assets/images/blog-2.png" alt=">Brendon - CEO & founder of Rezilla" class="blog__img"
-                  width="120" height="120">
-                <figcaption class="blog__tag">
-                  <h4 class="blog__date">08</h4>
-                  <p>Mon</p>
-                </figcaption>
-              </figure>
-              <h3 class="blog__title">How to Stage Your Home for a Quick Sale</h3>
-              <p>Nullam odio lacus, dictum quis pretium congue, vehicula venenatis nunc.</p>
-              <button class="btn btn--sm btn--outline btn--pill">
-                <i class="bx bx-right-arrow-alt blog__btn" aria-hidden="true"></i>
-              </button>
+            <li>
+              <a href="#" class="blog__item l-flex-col">
+                <figure class="blog__cover">
+                  <img src="./assets/images/blog-2.png" alt=">Brendon - CEO & founder of Rezilla" class="blog__img"
+                    width="120" height="120">
+                  <figcaption class="blog__tag">
+                    <h4 class="blog__date">08</h4>
+                    <p>Mon</p>
+                  </figcaption>
+                </figure>
+                <h3 class="blog__title">How to Stage Your Home for a Quick Sale</h3>
+                <p>Nullam odio lacus, dictum quis pretium congue, vehicula venenatis nunc.</p>
+                <a href="#" class="btn btn--sm btn--pill btn--outline  blog__btn">
+                  <i class="bx bx-right-arrow-alt bx-md" aria-hidden="true"></i>
+                </a>
+              </a>
             </li>
-            <li class="blog__item">
-              <figure class="blog__cover">
-                <img src="./assets/images/blog-3.png" alt=">Brendon - CEO & founder of Rezilla" class="blog__img"
-                  width="120" height="120">
-                <figcaption class="blog__tag">
-                  <h4 class="blog__date">15</h4>
-                  <p>Wed</p>
-                </figcaption>
-              </figure>
-              <h3 class="blog__title">5 Tips for First-Time Home Sellers</h3>
-              <p>In hac habitasse platea dictumst. Phasellus vel velit vel augue maximus.</p>
-              <button class="btn btn--sm btn--outline btn--pill">
-                <i class="bx bx-right-arrow-alt blog__btn" aria-hidden="true"></i>
-              </button>
+            <li class="blog__item l-flex-col">
+              <a href="#" class="blog__item l-flex-col">
+                <figure class="blog__cover">
+                  <img src="./assets/images/blog-3.png" alt=">Brendon - CEO & founder of Rezilla" class="blog__img"
+                    width="120" height="120">
+                  <figcaption class="blog__tag">
+                    <h4 class="blog__date">15</h4>
+                    <p>Wed</p>
+                  </figcaption>
+                </figure>
+                <h3 class="blog__title">5 Tips for First-Time Home Sellers</h3>
+                <p>In hac habitasse platea dictumst. Phasellus vel velit vel augue maximus.</p>
+                <a href="#" class="btn btn--sm btn--pill  blog__btn btn--outline">
+                  <i class="bx bx-right-arrow-alt bx-md" aria-hidden="true"></i>
+                </a>
+              </a>
             </li>
           </ul>
+          <a href="#" class="btn btn--lg btn--pill blog__btn blog-more-btn btn--outline">View more blogs
+          </a>
         </div>
       </div>
     </section>
@@ -571,35 +580,39 @@
     -->
     <section class="testimonials">
       <div class="l-container">
-        <div class="l-inner blog__inner l-grid">
+        <div class="l-inner testimonials__inner">
           <div>
             <p class="u-section-text">TESTIMONIALS</p>
-            <h2 class="u-headline-md blog__headline">Fusce venenatis tellus a felis scelerisque, non pulvinar est
+            <h2 class="u-headline-md testimonials__headline">Fusce venenatis tellus a felis scelerisque, non pulvinar
+              est
               pellentesque.</h2>
+            <p>Fusce venenatis tellus a felis scelerisque, non pulvinar est pellentesque. </p>
             <div class="l-flex-row">
-              <button class="btn btn--sm btn--outline btn--pill">
-                <i class="bx bx-left-arrow-alt blog__btn" aria-hidden="true"></i>
+              <button class="btn btn--sm btn--outline btn--pill testimonials__btn">
+                <i class="bx bx-left-arrow-alt bx-md" aria-hidden="true"></i>
               </button>
-              <button class="btn btn--sm btn--outline btn--pill">
-                <i class="bx bx-right-arrow-alt blog__btn" aria-hidden="true"></i>
+              <button class="btn btn--sm btn--outline btn--pill testimonials__btn">
+                <i class="bx bx-right-arrow-alt bx-md" aria-hidden="true"></i>
               </button>
             </div>
           </div>
-          <div class="testimonials__list owl-theme owl-carousel" style="display: none;">
+          <div class="testimonials__list owl-theme owl-carousel" data-name="testimonials">
             <div class="testimonials__item item">
               <img src="./assets/images/review-icon.png" alt="" width="20" height="20" class="testimonials__icon">
               <p>I highly recommend Jodi J. Appleby. She was attentive to our needs and worked tirelessly to find us the
                 perfect home. We couldn't be happier with our new place!</p>
-              <hr>
-              <div class="l-flex-row testimonial__footer">
-                <img src="./assets/images/review-avatar.png" alt="" class="testimonial__img" width="40" height="40">
-                <p class="testimonial__name">Barbara D. Smith</p>
-                <div class="testimonial__rating l-flex-row u-align-center">
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star-half"></i>
+              <hr class="testimonials__line">
+              <div class="l-flex-row testimonials__footer u-align-center">
+                <img src="./assets/images/review-avatar.png" alt="" class="testimonials__img" width="40" height="40">
+                <div class="l-flex-col">
+                  <p class="testimonials__name">Barbara D. Smith</p>
+                  <div class="testimonials__rating l-flex-row u-align-center">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bx-star"></i>
+                  </div>
                 </div>
               </div>
             </div>
@@ -613,7 +626,7 @@
     -->
     <section id="agent" class="agent">
       <div class="l-container">
-        <div class="l-inner">
+        <div class="l-inner agent__inner">
           <div class="agent__wrapper l-flex-col">
             <div>
               <h2 class="u-headline-md agent__headline">Become a Agent.</h2>
@@ -629,17 +642,17 @@
 
   <footer class="footer">
     <div class="l-container">
-      <div class="l-inner l-grid">
-        <div class="footer__brand l-flex-col">
+      <div class="l-inner l-grid footer__inner">
+        <div class="footer__brand l-flex-col u-align-center">
           <img src="./assets/images/logo.png" alt="Rezilla Home" class="footer__logo logo">
           <p class="footer__address">2728 Hickory StreetSalt
             Lake City, UT 84104</p>
-          <a href="tel:+1 206-214-2298" class="navbar__icon-inline l-flex-row u-align-center">
-            <i class="bx bx-phone" aria-hidden="true"></i>
+          <a href="tel:+1 206-214-2298" class="l-flex-row u-align-center">
+            <i class="bx bx-phone navbar__icon-inline " aria-hidden="true"></i>
             +1 206-214-2298
           </a>
-          <a href="mailto: support@rezilla.com" class="navbar__icon-inline l-flex-row u-align-center">
-            <i class="bx bx-envelope" aria-hidden="true"></i>
+          <a href="mailto: support@rezilla.com" class="l-flex-row u-align-center">
+            <i class="bx bx-envelope navbar__icon-inline " aria-hidden="true"></i>
             support@rezilla.com
           </a>
         </div>
@@ -689,10 +702,10 @@
             </li>
           </ul>
         </nav>
-        <div class="l-flex-col footer__newsletter">
-          <h2 class="footer__headline">Subscribe to our Newsletter!</h2>
+        <div class="l-flex-col footer__newsletter  u-align-center">
           <form action="#" class="footer__form">
-            <div class="footer__form-group">
+            <h2 class="footer__headline">Subscribe to our Newsletter!</h2>
+            <div class="footer__group">
               <input type="emal" class="footer__input" placeholder="Email Address">
               <button class="btn btn--sm btn--primary btn--pill footer__btn"><i
                   class="bx bx-right-arrow-alt"></i></button>
@@ -700,13 +713,13 @@
           </form>
           <h3 class="footer__title">Follow Us on</h3>
           <div class="footer__social l-flex-row u-align-center">
-            <a href="#" class="btn btn--sm btn--pill footer__btn">
+            <a href="#" class="btn btn--sm btn--pill">
               <img src="./assets/images/linkedin.png" alt="" class="footer__icon">
             </a>
-            <a href="#" class="btn btn--sm btn--pill footer__btn">
+            <a href="#" class="btn btn--sm btn--pill">
               <img src="./assets/images/facebook.png" alt="" class="footer__icon">
             </a>
-            <a href="#" class="btn btn--sm btn--pill footer__btn">
+            <a href="#" class="btn btn--sm btn--pill">
               <img src="./assets/images/instagram.png" alt="" class="footer__icon">
             </a>
           </div>

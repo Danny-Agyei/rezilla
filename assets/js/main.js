@@ -39,11 +39,25 @@ $(document).ready(function () {
         autoPlayTimeout: 1000,
         autoplaySpeed: 1800,
         smartSpeed: 800,
+        margin: 20,
         nav: true,
         dots: true,
         navText: [
           '<i class="bx bx-chevron-left bx-lg hero__icon" aria-hidden="true"></i>',
           '<i class="bx bx-chevron-right bx-lg hero__icon" aria-hidden="true"></i>',
+        ],
+      },
+      testimonials: {
+        responsiveClass: true,
+        autoPlayTimeout: 1000,
+        autoplaySpeed: 1800,
+        smartSpeed: 800,
+        margin: 40,
+        nav: false,
+        dots: true,
+        navText: [
+          '<i class="bx bx-arrow-left-alt bx-lg hero__icon" aria-hidden="true"></i>',
+          '<i class="bx bx-arrow-right-alt bx-lg hero__icon" aria-hidden="true"></i>',
         ],
       },
     };
@@ -52,7 +66,6 @@ $(document).ready(function () {
       center: true,
       items: 1,
       loop: true,
-      margin: 20,
       autoplay: true,
       autoHeight: true,
       autoplayHoverPause: true,
