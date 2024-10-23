@@ -58,7 +58,7 @@
           <div class="navbar__main l-flex-col">
             <nav>
               <ul class="navbar__list l-flex-col">
-                <li><a class="navbar__link" href="#home">Home</a></li>
+                <li><a class="navbar__link" href="#">Home</a></li>
                 <li><a class="navbar__link" href="#about">About</a></li>
                 <li><a class="navbar__link" href="#listings">Listings</a></li>
                 <li><a class="navbar__link" href="#services">Services</a></li>
@@ -161,7 +161,7 @@
     <!-- 
         * Trusted Companies | Clients
     -->
-    <section class="clients">
+    <section class="clients" id="client">
       <div class="l-container">
         <div class="l-inner clients__inner">
           <h2 class="u-headline-sm clients__headline">Trusted by 100+ Companies across the globe! </h2>
@@ -180,7 +180,7 @@
     <!-- 
         * About us
     -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="l-container">
         <div class="l-inner about__inner l-grid">
           <div class="about__content">
@@ -221,7 +221,7 @@
     <!-- 
         * Listed Properties
     -->
-    <section class="properties">
+    <section class="properties" id="listings">
       <div class="l-container">
         <div class="l-inner properties__inner l-flex-col">
           <div class="properties__header l-flex-col">
@@ -309,7 +309,9 @@
           <ul class="properties__list l-flex-col">
             <li>
               <a href="#" class="properties__item l-flex-col">
-                <img src="./assets/images/list-1.png" alt="" class="properties__img" width="300" height="300">
+                <div class="properties__cover">
+                  <img src="./assets/images/list-1.png" alt="" class="properties__img" width="300" height="300">
+                </div>
                 <h3 class="properties__price">$ 5,970</h3>
                 <h3 class="properties__title">Tranquil Haven in the Woods</h3>
                 <p>103 Wright CourtBurien, WA 98168</p>
@@ -324,9 +326,11 @@
                 </div>
               </a>
             </li>
-            <li class="properties__item l-flex-col">
+            <li>
               <a href="#" class="properties__item l-flex-col">
-                <img src="./assets/images/list-2.png" alt="" class="properties__img" width="300" height="300">
+                <div class="properties__cover">
+                  <img src="./assets/images/list-2.png" alt="" class="properties__img" width="300" height="300">
+                </div>
                 <h3 class="properties__price">$ 1,970</h3>
                 <h3 class="properties__title">Serene Retreat by the Lake</h3>
                 <p>1964 Jehovah Drive, VA 22408</p>
@@ -343,7 +347,9 @@
             </li>
             <li>
               <a href="#" class="properties__item l-flex-col">
-                <img src="./assets/images/list-3.png" alt="" class="properties__img" width="300" height="300">
+                <div class="properties__cover">
+                  <img src="./assets/images/list-3.png" alt="" class="properties__img" width="300" height="300">
+                </div>
                 <h3 class="properties__price">$ 3,450</h3>
                 <h3 class="properties__title">Charming Cottage in the Meadow</h3>
                 <p>1508 Centennial Farm RoadHarlan, 51537</p>
@@ -360,7 +366,9 @@
             </li>
             <li>
               <a href="#" class="properties__item l-flex-col">
-                <img src="./assets/images/list-2.png" alt="" class="properties__img" width="300" height="300">
+                <div class="properties__cover">
+                  <img src="./assets/images/list-2.png" alt="" class="properties__img" width="300" height="300">
+                </div>
                 <h3 class="properties__price">$ 2,389</h3>
                 <h3 class="properties__title">Grand Estate on the Hilltop</h3>
                 <p>103 Wright CourtBurien, WA 98168</p>
@@ -384,7 +392,7 @@
     <!-- 
         * Our Service
     -->
-    <section class="services">
+    <section class="services" id="services">
       <div class="l-container">
         <div class="l-inner services__inner">
           <p class="u-section-text">OUR SERVICES</p>
@@ -511,7 +519,7 @@
     <!-- 
         * Blog
     -->
-    <section class="blog">
+    <section class="blog" id="blogs">
       <div class="l-container">
         <div class="l-inner blog__inner">
           <p class="u-section-text blog__section-text">WHAT’S TRENDING</p>
@@ -616,6 +624,25 @@
                 </div>
               </div>
             </div>
+            <div class="testimonials__item item">
+              <img src="./assets/images/review-icon.png" alt="" width="20" height="20" class="testimonials__icon">
+              <p>I highly recommend Jodi J. Appleby. She was attentive to our needs and worked tirelessly to find us the
+                perfect home. We couldn't be happier with our new place!</p>
+              <hr class="testimonials__line">
+              <div class="l-flex-row testimonials__footer u-align-center">
+                <img src="./assets/images/hero-avatar-3.png" alt="" class="testimonials__img" width="40" height="40">
+                <div class="l-flex-col">
+                  <p class="testimonials__name">Angela keera</p>
+                  <div class="testimonials__rating l-flex-row u-align-center">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bx-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -643,7 +670,7 @@
   <footer class="footer">
     <div class="l-container">
       <div class="l-inner l-grid footer__inner">
-        <div class="footer__brand l-flex-col u-align-center">
+        <div class="footer__brand l-flex-col u-align-center u-justify-center">
           <img src="./assets/images/logo.png" alt="Rezilla Home" class="footer__logo logo">
           <p class="footer__address">2728 Hickory StreetSalt
             Lake City, UT 84104</p>
@@ -702,7 +729,7 @@
             </li>
           </ul>
         </nav>
-        <div class="l-flex-col footer__newsletter  u-align-center">
+        <div class="footer__newsletter">
           <form action="#" class="footer__form">
             <h2 class="footer__headline">Subscribe to our Newsletter!</h2>
             <div class="footer__group">
@@ -712,15 +739,15 @@
             </div>
           </form>
           <h3 class="footer__title">Follow Us on</h3>
-          <div class="footer__social l-flex-row u-align-center">
-            <a href="#" class="btn btn--sm btn--pill">
-              <img src="./assets/images/linkedin.png" alt="" class="footer__icon">
+          <div class="footer__social l-flex-row u-align-center u-justify-center">
+            <a href="#" class="btn btn--sm btn--pill footer__icon">
+              <i class="bx bxl-linkedin bx-md" aria-hidden="true"></i>
             </a>
-            <a href="#" class="btn btn--sm btn--pill">
-              <img src="./assets/images/facebook.png" alt="" class="footer__icon">
+            <a href="#" class="btn btn--sm btn--pill footer__icon">
+              <i class="bx bxl-facebook bx-md" aria-hidden="true"></i>
             </a>
-            <a href="#" class="btn btn--sm btn--pill">
-              <img src="./assets/images/instagram.png" alt="" class="footer__icon">
+            <a href="#" class="btn btn--sm btn--pill footer__icon">
+              <i class="bx bxl-instagram bx-md" aria-hidden="true"></i>
             </a>
           </div>
         </div>
