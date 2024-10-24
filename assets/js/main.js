@@ -1,8 +1,9 @@
 $(document).ready(function () {
   const navbarMenu = $(".js-drawer");
+  const navbarLink = $(".js-navbar-link");
   const navbarMenuBtn = $(".js-navbar-toggler");
   const navbarMenuIcon = $(".js-menu-icon");
-  const mobileNavbar = $(".js-mobile-nav");
+  const mainHeader = $(".js-header");
   const allCarousels = $(".owl-carousel");
 
   // Add event to Element
@@ -15,13 +16,17 @@ $(document).ready(function () {
 
   function onScrollTrigger() {
     if (window.scrollY > 100) {
-      mobileNavbar.addClass("is-active");
+      mainHeader.addClass("is-active");
       return;
     }
-    mobileNavbar.removeClass("is-active");
+    mainHeader.removeClass("is-active");
   }
 
   // Navbar menu toggler
+  Array.from(navbarLink, (link) =>
+    addEventToElem("click", link, navbarToggler)
+  );
+
   addEventToElem("click", navbarMenuBtn, navbarToggler);
 
   function navbarToggler() {
@@ -59,6 +64,12 @@ $(document).ready(function () {
           '<i class="bx bx-arrow-left-alt bx-lg hero__icon" aria-hidden="true"></i>',
           '<i class="bx bx-arrow-right-alt bx-lg hero__icon" aria-hidden="true"></i>',
         ],
+        responsive: {
+          768: {
+            items: 2,
+            margin: 20,
+          },
+        },
       },
     };
 

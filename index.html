@@ -23,25 +23,25 @@
 </head>
 
 <body>
-  <header>
+  <header class="header js-header">
+    <div class="l-flex-col header__banner">
+      <p class="navbar__icon-inline l-flex-row u-align-center">
+        <i class="bx bx-map" aria-hidden="true"></i>
+        Rezilla, 18 Grattan St, Brooklyn
+      </p>
+      <div class="l-flex-row u-justify-between">
+        <p class="navbar__icon-inline l-flex-row u-align-center">
+          <i class="bx bx-phone" aria-hidden="true"></i>
+          +1 206-214-2298
+        </p>
+        <p class="navbar__icon-inline l-flex-row u-align-center">
+          <i class="bx bx-envelope" aria-hidden="true"></i>
+          support@rezilla.com
+        </p>
+      </div>
+    </div>
     <div class="l-container">
-      <div class="navbar js-mobile-nav">
-        <div class="l-flex-col navbar__banner">
-          <p class="navbar__icon-inline l-flex-row u-align-center">
-            <i class="bx bx-map" aria-hidden="true"></i>
-            Rezilla, 18 Grattan St, Brooklyn
-          </p>
-          <div class="l-flex-row u-justify-between">
-            <p class="navbar__icon-inline l-flex-row u-align-center">
-              <i class="bx bx-phone" aria-hidden="true"></i>
-              +1 206-214-2298
-            </p>
-            <p class="navbar__icon-inline l-flex-row u-align-center">
-              <i class="bx bx-envelope" aria-hidden="true"></i>
-              support@rezilla.com
-            </p>
-          </div>
-        </div>
+      <div class="navbar">
         <!-- Small screen Navbar header  -->
         <div class="navbar__mobile l-flex-row u-align-center u-justify-between">
           <a href="#">
@@ -58,20 +58,20 @@
           <div class="navbar__main l-flex-col">
             <nav>
               <ul class="navbar__list l-flex-col">
-                <li><a class="navbar__link" href="#">Home</a></li>
-                <li><a class="navbar__link" href="#about">About</a></li>
-                <li><a class="navbar__link" href="#listings">Listings</a></li>
-                <li><a class="navbar__link" href="#services">Services</a></li>
-                <li><a class="navbar__link" href="#blogs">Blogs</a></li>
+                <li><a class="navbar__link js-navbar-link" href="#">Home</a></li>
+                <li><a class="navbar__link js-navbar-link" href="#about">About</a></li>
+                <li><a class="navbar__link js-navbar-link" href="#listings">Listings</a></li>
+                <li><a class="navbar__link js-navbar-link" href="#services">Services</a></li>
+                <li><a class="navbar__link js-navbar-link" href="#blogs">Blogs</a></li>
               </ul>
             </nav>
             <img src="./assets/images/logo.png" alt="Reazilla Home" class="logo navbar-logo" width="120" height="120" />
             <div class="navbar__action l-flex-col">
-              <a href="#" class="btn navbar__link">
+              <a href="#" class="btn navbar__link js-navbar-link">
                 <i class="bx bx-user-circle bx-md navbar__icon-inline" aria-hidden="true"></i>
                 Login/Register
               </a>
-              <button class="btn btn--lg btn--primary btn--pill btn--icon navbar__btn">
+              <button class="btn btn--lg btn--primary btn--pill btn--icon navbar__btn js-navbar-link">
                 <img src="./assets/images/btn-house.png" alt="" width="20" height="20" />
                 Add Listing
               </button>
@@ -162,18 +162,18 @@
         * Trusted Companies | Clients
     -->
     <section class="clients" id="client">
-      <div class="l-container">
-        <div class="l-inner clients__inner">
-          <h2 class="u-headline-sm clients__headline">Trusted by 100+ Companies across the globe! </h2>
-          <div class="l-flex-row clients__brand u-align-center">
-            <img src="./assets/images/google.png" alt="Google" class="clients__img" width="100" height="100">
-            <img src="./assets/images/amazon.png" alt="Amazon" class="clients__img" width="100" height="100">
-            <img src="./assets/images/logitech.png" alt="Logitech" class="clients__img" width="100" height="100">
-            <img src="./assets/images/spotify.png" alt="Spotify" class="clients__img" width="100" height="100">
-            <img src="./assets/images/samsung.png" alt="Samsung" class="clients__img" width="100" height="100">
-            <img src="./assets/images/netflix.png" alt="Netflix" class="clients__img" width="100" height="100">
-          </div>
+      <!-- <div class="l-container"> -->
+      <div class="l-inner clients__inner">
+        <h2 class="u-headline-sm clients__headline">Trusted by 100+ Companies across the globe! </h2>
+        <div class="l-flex-row clients__brand u-align-center">
+          <img src="./assets/images/google.png" alt="Google" class="clients__img" width="100" height="100">
+          <img src="./assets/images/amazon.png" alt="Amazon" class="clients__img" width="100" height="100">
+          <img src="./assets/images/logitech.png" alt="Logitech" class="clients__img" width="100" height="100">
+          <img src="./assets/images/spotify.png" alt="Spotify" class="clients__img" width="100" height="100">
+          <img src="./assets/images/samsung.png" alt="Samsung" class="clients__img" width="100" height="100">
+          <img src="./assets/images/netflix.png" alt="Netflix" class="clients__img" width="100" height="100">
         </div>
+      </div>
       </div>
     </section>
 
@@ -229,20 +229,21 @@
               <p class="u-section-text">CHECKOUT OUR NEW</p>
               <h1 class="properties__headline u-headline-md">Latest Listed Properties
               </h1>
-              <p>Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus.</p>
+              <p class="properties__desc">Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim
+                purus.</p>
             </div>
             <ul class="properties__col properties-selector l-flex-row u-align-center">
               <li>
                 <input type="radio" name="status" id="all" class="properties__input">
-                <label for="all" role="button" class="btn btn--lg btn--outline btn--pill">All</label>
+                <label for="all" role="button" class="btn btn--md btn--outline btn--pill">All</label>
               </li>
               <li>
                 <input type="radio" name="status" id="for-sale" class="properties__input" checked>
-                <label for="for-sale" role="button" class="btn btn--lg btn--outline btn--pill">Sell</label>
+                <label for="for-sale" role="button" class="btn btn--md btn--outline btn--pill">Sell</label>
               </li>
               <li>
                 <input type="radio" name="status" id="for-rent" class="properties__input">
-                <label for="for-rent" role="button" class="btn btn--lg btn--outline btn--pill">Rent</label>
+                <label for="for-rent" role="button" class="btn btn--md btn--outline btn--pill">Rent</label>
               </li>
             </ul>
           </div>
@@ -306,7 +307,7 @@
             </div>
           </div>
           <!-- Small screen properties is listed  -->
-          <ul class="properties__list l-flex-col">
+          <ul class="properties__list l-grid">
             <li>
               <a href="#" class="properties__item l-flex-col">
                 <div class="properties__cover">
@@ -397,7 +398,7 @@
         <div class="l-inner services__inner">
           <p class="u-section-text">OUR SERVICES</p>
           <h2 class="u-headline-md services__headline">Donec porttitor euismod dignissim</h2>
-          <ul class="services__list l-flex-col">
+          <ul class="services__list l-grid">
             <li class="services__item l-flex-col u-pull-center">
               <img src="./assets/images/search.png" alt="" class="services__img" width="80" height="80">
               <h3 class="services__title">Buy a New Home</h3>
@@ -486,7 +487,7 @@
         <div class="l-inner team__inner">
           <p class="u-section-text">INTRODUCE YOURSELF TO</p>
           <h2 class="u-headline-md team__headline">Our Team of Experts</h2>
-          <ul class="team__list l-grid">
+          <ul class="team__list l-flex-row u-justify-center">
             <li class="team__item">
               <img src="./assets/images/team-1.png" alt=">Brendon - CEO & founder of Rezilla" class="team__img"
                 width="120" height="120">
@@ -521,11 +522,11 @@
     -->
     <section class="blog" id="blogs">
       <div class="l-container">
-        <div class="l-inner blog__inner">
+        <div class="l-inner blog__inner l-flex-col">
           <p class="u-section-text blog__section-text">WHAT’S TRENDING</p>
           <h2 class="u-headline-md blog__headline">Latest Blogs & Posts</h2>
           <ul class="blog__list l-flex-col">
-            <li>
+            <li class="blog__col">
               <a href="#" class="blog__item l-flex-col">
                 <figure class="blog__cover">
                   <img src="./assets/images/blog-1.png" alt=">Brendon - CEO & founder of Rezilla" class="blog__img"
@@ -542,7 +543,7 @@
                 </a>
               </a>
             </li>
-            <li>
+            <li class="blog__col">
               <a href="#" class="blog__item l-flex-col">
                 <figure class="blog__cover">
                   <img src="./assets/images/blog-2.png" alt=">Brendon - CEO & founder of Rezilla" class="blog__img"
@@ -559,7 +560,7 @@
                 </a>
               </a>
             </li>
-            <li class="blog__item l-flex-col">
+            <li class="blog__col">
               <a href="#" class="blog__item l-flex-col">
                 <figure class="blog__cover">
                   <img src="./assets/images/blog-3.png" alt=">Brendon - CEO & founder of Rezilla" class="blog__img"
@@ -655,11 +656,11 @@
       <div class="l-container">
         <div class="l-inner agent__inner">
           <div class="agent__wrapper l-flex-col">
-            <div>
+            <div class="agent__block-text l-flex-col">
               <h2 class="u-headline-md agent__headline">Become a Agent.</h2>
               <p>Fusce venenatis tellus a felis scelerisque. venenatis tellus a felis scelerisque. </p>
+              <button class="btn btn--lg btn--outline btn--pill agent__btn">Register Now</button>
             </div>
-            <button class="btn btn--lg btn--outline btn--pill agent__btn">Register Now</button>
             <img src="./assets/images/agent.png" alt="Brendon - CEO and founder" class="agent__img">
           </div>
         </div>
