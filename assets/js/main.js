@@ -3,7 +3,8 @@ $(document).ready(function () {
   const navbarLink = $(".js-navbar-link");
   const navbarMenuBtn = $(".js-navbar-toggler");
   const navbarMenuIcon = $(".js-menu-icon");
-  const mainHeader = $(".js-header");
+  const header = $(".js-header");
+  const mainNavbar = $(".js-main-navbar");
   const allCarousels = $(".owl-carousel");
 
   // Add event to Element
@@ -16,10 +17,12 @@ $(document).ready(function () {
 
   function onScrollTrigger() {
     if (window.scrollY > 100) {
-      mainHeader.addClass("is-active");
+      header.addClass("is-active");
+      mainNavbar.addClass("is-active");
       return;
     }
-    mainHeader.removeClass("is-active");
+    header.removeClass("is-active");
+    mainNavbar.removeClass("is-active");
   }
 
   // Navbar menu toggler
@@ -51,9 +54,14 @@ $(document).ready(function () {
           '<i class="bx bx-chevron-left bx-lg hero__icon" aria-hidden="true"></i>',
           '<i class="bx bx-chevron-right bx-lg hero__icon" aria-hidden="true"></i>',
         ],
+        responsive: {
+          992: {
+            margin: 30,
+          },
+        },
       },
       testimonials: {
-        responsiveClass: true,
+        // responsiveClass: true,
         autoPlayTimeout: 1000,
         autoplaySpeed: 1800,
         smartSpeed: 800,
@@ -61,13 +69,39 @@ $(document).ready(function () {
         nav: false,
         dots: true,
         navText: [
-          '<i class="bx bx-arrow-left-alt bx-lg hero__icon" aria-hidden="true"></i>',
-          '<i class="bx bx-arrow-right-alt bx-lg hero__icon" aria-hidden="true"></i>',
+          '<i class="bx bx-left-arrow-alt bx-md" aria-hidden="true"></i>',
+          '<i class="bx bx-right-arrow-alt bx-md" aria-hidden="true"></i>',
         ],
         responsive: {
           768: {
+            nav: true,
             items: 2,
             margin: 20,
+          },
+          992: {
+            nav: true,
+            items: 1,
+            margin: 30,
+          },
+          1280: {
+            nav: true,
+            items: 1,
+            margin: 40,
+          },
+        },
+      },
+      properties: {
+        responsiveClass: true,
+        autoPlayTimeout: 1000,
+        autoplaySpeed: 1800,
+        smartSpeed: 800,
+        margin: 40,
+        nav: false,
+        dots: false,
+        responsive: {
+          992: {
+            items: 3,
+            margin: 40,
           },
         },
       },

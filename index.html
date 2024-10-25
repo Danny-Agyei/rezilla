@@ -24,24 +24,26 @@
 
 <body>
   <header class="header js-header">
-    <div class="l-flex-col header__banner">
-      <p class="navbar__icon-inline l-flex-row u-align-center">
-        <i class="bx bx-map" aria-hidden="true"></i>
-        Rezilla, 18 Grattan St, Brooklyn
-      </p>
-      <div class="l-flex-row u-justify-between">
-        <p class="navbar__icon-inline l-flex-row u-align-center">
-          <i class="bx bx-phone" aria-hidden="true"></i>
-          +1 206-214-2298
+    <div class="header__banner">
+      <div class="l-container header__container l-flex-row u-align-center u-justify-between">
+        <p class="l-flex-row u-align-center">
+          <i class="u-icon-inline bx bx-map" aria-hidden="true"></i>
+          Rezilla, 18 Grattan St, Brooklyn
         </p>
-        <p class="navbar__icon-inline l-flex-row u-align-center">
-          <i class="bx bx-envelope" aria-hidden="true"></i>
-          support@rezilla.com
-        </p>
+        <div class="l-flex-row u-justify-between header__info">
+          <p class="l-flex-row u-align-center">
+            <i class="u-icon-inline bx bx-phone" aria-hidden="true"></i>
+            +1 206-214-2298
+          </p>
+          <p class="l-flex-row u-align-center">
+            <i class="u-icon-inline bx bx-envelope" aria-hidden="true"></i>
+            support@rezilla.com
+          </p>
+        </div>
       </div>
     </div>
-    <div class="l-container">
-      <div class="navbar">
+    <div class="navbar js-main-navbar">
+      <div class="l-container">
         <!-- Small screen Navbar header  -->
         <div class="navbar__mobile l-flex-row u-align-center u-justify-between">
           <a href="#">
@@ -53,8 +55,10 @@
             <span class="navbar__menu-bar js-menu-icon"></span>
           </button>
         </div>
-        <!-- Main Navbar -->
-        <div class="navbar__drawer l-flex-col js-drawer">
+      </div>
+      <!-- Main Navbar -->
+      <div class="navbar__drawer l-flex-col js-drawer">
+        <div class="l-container">
           <div class="navbar__main l-flex-col">
             <nav>
               <ul class="navbar__list l-flex-col">
@@ -68,7 +72,7 @@
             <img src="./assets/images/logo.png" alt="Reazilla Home" class="logo navbar-logo" width="120" height="120" />
             <div class="navbar__action l-flex-col">
               <a href="#" class="btn navbar__link js-navbar-link">
-                <i class="bx bx-user-circle bx-md navbar__icon-inline" aria-hidden="true"></i>
+                <i class="bx bx-user-circle bx-md u-icon-inline" aria-hidden="true"></i>
                 Login/Register
               </a>
               <button class="btn btn--lg btn--primary btn--pill btn--icon navbar__btn js-navbar-link">
@@ -91,8 +95,8 @@
           <div class="hero__content">
             <p class="u-section-text">REAL ESTATE</p>
             <h1 class="hero__headline u-headline-lg">Find a perfect home you love..!</h1>
-            <p class="hero__desc">Etiam eget elementum elit. Aenean dignissim dapibus vestibulum. Integer a dolor eu
-              sapien sodales
+            <p class="hero__desc">Etiam eget elementum elit. Aenean dignissim dapibus vebulum. Integer a dolor eu
+              sapien.
               vulputate ac in purus.</p>
             <div class="hero__carousel owl-theme owl-carousel" data-name="hero">
               <div class="hero__item item">
@@ -222,7 +226,7 @@
         * Listed Properties
     -->
     <section class="properties" id="listings">
-      <div class="l-container">
+      <div class="l-container properties__container">
         <div class="l-inner properties__inner l-flex-col">
           <div class="properties__header l-flex-col">
             <div class="properties__col">
@@ -248,62 +252,82 @@
             </ul>
           </div>
           <!-- Large screen properties in slides  -->
-          <div class="properties-carousel owl-carousel owl-theme" style="display: none;">
-            <div class="properties__item item l-flex-col">
-              <img src="./assets/images/list-1.png" alt="" class="properties__img" width="200" height="200">
-              <h3 class="properties__price">$ 5,970</h3>
-              <h3 class="properties__title">Tranquil Haven in the Woods</h3>
-              <p>103 Wright CourtBurien, WA 98168</p>
-              <div class="l-flex-row u-align-center">
-                <div class="l-flex-row u-align-center">
-                  <img src="./assets/images/bed-icon.png" class="properties__icon" alt="" width="20" height="20">4 Beds
+          <div class="properties-carousel owl-carousel owl-theme" data-name="properties">
+            <div class="item">
+              <a href="#" class="properties__item l-flex-col">
+                <div class="properties__cover">
+                  <img src="./assets/images/list-1.png" alt="" class="properties__img" width="300" height="300">
                 </div>
-                <div class="l-flex-row u-align-center">
-                  <img src="./assets/images/bath.png" class="properties__icon" alt="" width="20" height="20">3 Bath
+                <h3 class="properties__price">$ 5,970</h3>
+                <h3 class="properties__title">Tranquil Haven in the Woods</h3>
+                <p>103 Wright CourtBurien, WA 98168</p>
+                <div class="l-flex-row u-align-center properties__features">
+                  <div class="l-flex-row u-align-center">
+                    <img src="./assets/images/bed-icon.png" class="properties__icon" alt="" width="24" height="24">4
+                    Beds
+                  </div>
+                  <div class="l-flex-row u-align-center">
+                    <img src="./assets/images/bath.png" class="properties__icon" alt="" width="20" height="20">3 Bath
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
-            <div class="properties__item item l-flex-col">
-              <img src="./assets/images/list-2.png" alt="" class="properties__img" width="200" height="200">
-              <h3 class="properties__price">$ 1,970</h3>
-              <h3 class="properties__title">Serene Retreat by the Lake</h3>
-              <p>1964 Jehovah Drive, VA 22408</p>
-              <div class="l-flex-row u-align-center">
-                <div class="l-flex-row u-align-center">
-                  <img src="./assets/images/bed-icon.png" class="properties__icon" alt="" width="20" height="20">2 Beds
+            <div class="item">
+              <a href="#" class="properties__item l-flex-col">
+                <div class="properties__cover">
+                  <img src="./assets/images/list-2.png" alt="" class="properties__img" width="300" height="300">
                 </div>
-                <div class="l-flex-row u-align-center">
-                  <img src="./assets/images/bath.png" class="properties__icon" alt="" width="20" height="20">2 Bath
+                <h3 class="properties__price">$ 1,970</h3>
+                <h3 class="properties__title">Serene Retreat by the Lake</h3>
+                <p>1964 Jehovah Drive, VA 22408</p>
+                <div class="l-flex-row u-align-center properties__features">
+                  <div class="l-flex-row u-align-center">
+                    <img src="./assets/images/bed-icon.png" class="properties__icon" alt="" width="24" height="24">2
+                    Beds
+                  </div>
+                  <div class="l-flex-row u-align-center">
+                    <img src="./assets/images/bath.png" class="properties__icon" alt="" width="20" height="20">2 Bath
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
-            <div class="properties__item item l-flex-col">
-              <img src="./assets/images/list-3.png" alt="" class="properties__img" width="200" height="200">
-              <h3 class="properties__price">$ 3,450</h3>
-              <h3 class="properties__title">Charming Cottage in the Meadow</h3>
-              <p>1508 Centennial Farm RoadHarlan, 51537</p>
-              <div class="l-flex-row u-align-center">
-                <div class="l-flex-row u-align-center">
-                  <img src="./assets/images/bed-icon.png" class="properties__icon" alt="" width="20" height="20">4 Beds
+            <div class="item">
+              <a href="#" class="properties__item l-flex-col">
+                <div class="properties__cover">
+                  <img src="./assets/images/list-3.png" alt="" class="properties__img" width="300" height="300">
                 </div>
-                <div class="l-flex-row u-align-center">
-                  <img src="./assets/images/bath.png" class="properties__icon" alt="" width="20" height="20">4 Bath
+                <h3 class="properties__price">$ 3,450</h3>
+                <h3 class="properties__title">Charming Cottage in Meadow</h3>
+                <p>1508 Centennial Farm RoadHarlan</p>
+                <div class="l-flex-row u-align-center properties__features">
+                  <div class="l-flex-row u-align-center">
+                    <img src="./assets/images/bed-icon.png" class="properties__icon" alt="" width="24" height="24">4
+                    Beds
+                  </div>
+                  <div class="l-flex-row u-align-center">
+                    <img src="./assets/images/bath.png" class="properties__icon" alt="" width="20" height="20">4 Bath
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
-            <div class="properties__item item l-flex-col">
-              <img src="./assets/images/list-2.png" alt="" class="properties__img" width="200" height="200">
-              <h3 class="properties__price">$ 2,389</h3>
-              <h3 class="properties__title">Grand Estate on the Hilltop</h3>
-              <p>103 Wright CourtBurien, WA 98168</p>
-              <div class="l-flex-row u-align-center">
-                <div class="l-flex-row u-align-center">
-                  <img src="./assets/images/bed-icon.png" class="properties__icon" alt="" width="20" height="20">4 Beds
+            <div class="item">
+              <a href="#" class="properties__item l-flex-col">
+                <div class="properties__cover">
+                  <img src="./assets/images/list-2.png" alt="" class="properties__img" width="300" height="300">
                 </div>
-                <div class="l-flex-row u-align-center">
-                  <img src="./assets/images/bath.png" class="properties__icon" alt="" width="20" height="20">3 Bath
+                <h3 class="properties__price">$ 2,389</h3>
+                <h3 class="properties__title">Grand Estate on the Hilltop</h3>
+                <p>103 Wright CourtBurien, WA 98168</p>
+                <div class="l-flex-row u-align-center properties__features">
+                  <div class="l-flex-row u-align-center">
+                    <img src="./assets/images/bed-icon.png" class="properties__icon" alt="" width="24" height="24">4
+                    Beds
+                  </div>
+                  <div class="l-flex-row u-align-center">
+                    <img src="./assets/images/bath.png" class="properties__icon" alt="" width="20" height="20">3 Bath
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
           <!-- Small screen properties is listed  -->
@@ -590,11 +614,9 @@
     <section class="testimonials">
       <div class="l-container">
         <div class="l-inner testimonials__inner">
-          <div>
+          <div class="testimonials__block-text">
             <p class="u-section-text">TESTIMONIALS</p>
-            <h2 class="u-headline-md testimonials__headline">Fusce venenatis tellus a felis scelerisque, non pulvinar
-              est
-              pellentesque.</h2>
+            <h2 class="u-headline-md testimonials__headline">Look What Our Customers Say!</h2>
             <p>Fusce venenatis tellus a felis scelerisque, non pulvinar est pellentesque. </p>
             <div class="l-flex-row">
               <button class="btn btn--sm btn--outline btn--pill testimonials__btn">
@@ -613,7 +635,7 @@
               <hr class="testimonials__line">
               <div class="l-flex-row testimonials__footer u-align-center">
                 <img src="./assets/images/review-avatar.png" alt="" class="testimonials__img" width="40" height="40">
-                <div class="l-flex-col">
+                <div class="l-flex-col testimonials__owner">
                   <p class="testimonials__name">Barbara D. Smith</p>
                   <div class="testimonials__rating l-flex-row u-align-center">
                     <i class="bx bxs-star"></i>
@@ -632,7 +654,7 @@
               <hr class="testimonials__line">
               <div class="l-flex-row testimonials__footer u-align-center">
                 <img src="./assets/images/hero-avatar-3.png" alt="" class="testimonials__img" width="40" height="40">
-                <div class="l-flex-col">
+                <div class="l-flex-col testimonials__owner">
                   <p class="testimonials__name">Angela keera</p>
                   <div class="testimonials__rating l-flex-row u-align-center">
                     <i class="bx bxs-star"></i>
@@ -657,8 +679,11 @@
         <div class="l-inner agent__inner">
           <div class="agent__wrapper l-flex-col">
             <div class="agent__block-text l-flex-col">
-              <h2 class="u-headline-md agent__headline">Become a Agent.</h2>
-              <p>Fusce venenatis tellus a felis scelerisque. venenatis tellus a felis scelerisque. </p>
+              <div>
+                <h2 class="u-headline-md agent__headline">Become a Agent.</h2>
+                <p class="agent__desc">Fusce venenatis tellus a felis scelerisque. venenatis tellus a felis scelerisque.
+                </p>
+              </div>
               <button class="btn btn--lg btn--outline btn--pill agent__btn">Register Now</button>
             </div>
             <img src="./assets/images/agent.png" alt="Brendon - CEO and founder" class="agent__img">
@@ -672,15 +697,17 @@
     <div class="l-container">
       <div class="l-inner l-grid footer__inner">
         <div class="footer__brand l-flex-col u-align-center u-justify-center">
-          <img src="./assets/images/logo.png" alt="Rezilla Home" class="footer__logo logo">
+          <a href="#">
+            <img src="./assets/images/logo.png" alt="Rezilla Home" class="footer__logo logo" width="100" height="100">
+          </a>
           <p class="footer__address">2728 Hickory StreetSalt
             Lake City, UT 84104</p>
           <a href="tel:+1 206-214-2298" class="l-flex-row u-align-center">
-            <i class="bx bx-phone navbar__icon-inline " aria-hidden="true"></i>
+            <i class="bx bx-phone u-icon-inline " aria-hidden="true"></i>
             +1 206-214-2298
           </a>
           <a href="mailto: support@rezilla.com" class="l-flex-row u-align-center">
-            <i class="bx bx-envelope navbar__icon-inline " aria-hidden="true"></i>
+            <i class="bx bx-envelope u-icon-inline " aria-hidden="true"></i>
             support@rezilla.com
           </a>
         </div>
@@ -755,12 +782,12 @@
       </div>
     </div>
     <div class="footer__terms">
-      <div class="l-container l-flex-col">
+      <div class="footer__terms-container l-container l-flex-col">
         <p>© Rezilla – All rights reserved</p>
         <ul class="footer__terms-list l-flex-row">
-          <li>Terms and Conditions</li>
-          <li>Privacy Policy</li>
-          <li>Disclaimer</li>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#"> Privacy Policy</a></li>
+          <li><a href="#"> Disclaimer</a></li>
         </ul>
       </div>
     </div>
