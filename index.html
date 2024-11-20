@@ -25,25 +25,35 @@
     @font-face {
       font-family: 'Proxima Nova Rg';
       font-style: normal;
-      src: url('https://giant-pink-raincoat.cyclic.app/fonts/ProximaNova-Bold.otf') format('opentype'),
-        url('https://giant-pink-raincoat.cyclic.app/fonts/ProximaNova-Bold.ttf') format('truetype'),
-        url('https://giant-pink-raincoat.cyclic.app/fonts/ProximaNova-Bold.woff') format('woff'),
-        url('https://giant-pink-raincoat.cyclic.app/fonts/ProximaNova-Bold.woff2') format('woff2');
+      font-weight: 700;
+      src: url('./assets/fonts') format('woff2'),
+        url('./assets/fonts/ProximaNova-Bold.woff') format('woff'),
+        url('./assets/fonts/ProximaNova-Bold.ttf') format('truetype'),
+        url('./assets/fonts/ProximaNova-Bold.otf') format('opentype');
     }
 
     @font-face {
       font-family: 'Proxima Nova Rg';
       font-style: normal;
-      src: url('https://giant-pink-raincoat.cyclic.app/fonts/ProximaNova-Regular.otf') format('opentype'),
-        url('https://giant-pink-raincoat.cyclic.app/fonts/ProximaNova-Regular.ttf') format('truetype'),
-        url('https://giant-pink-raincoat.cyclic.app/fonts/ProximaNova-Regular.woff') format('woff'),
-        url('https://giant-pink-raincoat.cyclic.app/fonts/ProximaNova-Regular.woff2') format('woff2');
+      font-weight: 400;
+      src: url('./assets/fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('./assets/fonts/ProximaNova-Regular.woff') format('woff'),
+        url('./assets/fonts/ProximaNova-Regular.ttf') format('truetype'),
+        url('./assets/fonts/ProximaNova-Regular.otf') format('opentype');
+    }
+
+    /* Applying Proxima Nova Rg with proper weights */
+    .proxima-rg {
+      font-family: 'Proxima Nova Rg', 'Georgia', 'Helvetica', 'Arial', sans-serif;
+      font-weight: 400;
     }
 
     .proxima-bd {
-      font-family: 'Proxima Nova Rg', 'Georgia', helvetica, arial, sans-serif !important;
+      font-family: 'Proxima Nova Rg', 'Georgia', 'Helvetica', 'Arial', sans-serif;
+      font-weight: 700;
     }
   </style>
+
 </head>
 
 <body>
@@ -111,6 +121,13 @@
         </div>
       </div>
     </div>
+
+    <h1 class="proxima-bd">
+      Congratulation
+    </h1>
+    <p class="prosima-rg">
+      Find a perfect home you love..
+    </p>
   </header>
   <main>
     <!-- 
