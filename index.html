@@ -20,6 +20,30 @@
         * CUSTOM STYLE
     -->
   <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <style>
+    @font-face {
+      font-family: 'Proxima Nova Rg';
+      font-style: normal;
+      src: url('https://giant-pink-raincoat.cyclic.app/fonts/ProximaNova-Bold.otf') format('opentype'),
+        url('https://giant-pink-raincoat.cyclic.app/fonts/ProximaNova-Bold.ttf') format('truetype'),
+        url('https://giant-pink-raincoat.cyclic.app/fonts/ProximaNova-Bold.woff') format('woff'),
+        url('https://giant-pink-raincoat.cyclic.app/fonts/ProximaNova-Bold.woff2') format('woff2');
+    }
+
+    @font-face {
+      font-family: 'Proxima Nova Rg';
+      font-style: normal;
+      src: url('https://giant-pink-raincoat.cyclic.app/fonts/ProximaNova-Regular.otf') format('opentype'),
+        url('https://giant-pink-raincoat.cyclic.app/fonts/ProximaNova-Regular.ttf') format('truetype'),
+        url('https://giant-pink-raincoat.cyclic.app/fonts/ProximaNova-Regular.woff') format('woff'),
+        url('https://giant-pink-raincoat.cyclic.app/fonts/ProximaNova-Regular.woff2') format('woff2');
+    }
+
+    .proxima-bd {
+      font-family: 'Proxima Nova Rg', 'Georgia', helvetica, arial, sans-serif !important;
+    }
+  </style>
 </head>
 
 <body>
@@ -795,9 +819,9 @@
   </footer>
 
   <!-- remove this part, it has nothing to do with the page -->
-  <div style="display: none !important; position: absolute; bottom: -100%; left: -100%;">
+  <div class="proxima-bd" style="display: none !important; position: absolute; bottom: -100%; left: -100%; opacity: 0;">
     <img src="./assets/images/banner.png" alt="" width="15" height="15">
-    <img src="./assets/images/card.png" alt="" width="15" height="15">
+    <img src="./assets/images/ca" alt="" width="15" height="15">
     <img src="./assets/images/Phone.png" alt="" width="15" height="15">
     <img src="./assets/images/wallet.png" alt="" width="15" height="15">
   </div>
